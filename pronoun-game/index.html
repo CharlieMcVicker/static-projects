@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- 
+      This is an HTML comment
+      You can write text in a comment and the content won't be visible in the page
+    -->
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <!--
+      This is the page head - it contains info the browser uses
+      Like the title, which appears on the browser tab but not inside the page
+      Further down you'll see the content that displays in the page
+    -->
+    <title>Cherokee pronoun game</title>
+
+    <!-- The website stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- The website JavaScript file -->
+    <script src="script.js" defer></script>
+  </head>
+
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-2VT1MMED71"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-2VT1MMED71");
+  </script>
+
+  <body>
+    <!--
+      The body includes the content you see in the page
+      Each element is defined using tags, like this <div></div>
+      The attributes like class="wrapper" let us style elements in the CSS
+    -->
+    <div class="wrapper">
+      <div class="content" role="main">
+        <h1 class="title">Cherokee pronoun game</h1>
+        <div class="disclaimer">
+          <p>
+            This website was made by learners. There may be mistakes. Mistakes
+            are a part of learning and can be corrected. If you see a mistake,
+            please let us know!
+          </p>
+        </div>
+        <div class="instructions">
+          <p>
+            <a href="Pronouns chart.pdf" download
+              ><strong
+                >Download a printable pronoun cheatsheet (with
+                diagrams!)</strong
+              ></a
+            >
+          </p>
+          <p>
+            <a href="full-list">Want more information?</a> Click the link to see
+            a list of the most common Cherokee pronouns and a brief explanation
+            of some of the grammar at play.
+          </p>
+          <button id="random">Totally random!</button>
+          <hr />
+          <form id="theform">
+            <div>
+              <label class="showOptions"
+                >Show options <input name="showOptions" type="checkbox" checked
+              /></label>
+            </div>
+            <div>
+              <div id="pronoun-and-verb">
+                <label for="pronoun">Who is doing the action?</label>
+                <div>
+                  <select name="pronoun">
+                    <option value="1sg">I am... (First person singular)</option>
+                    <option value="1dl-ex">
+                      S/he and I are... (First person dual exclusive)
+                    </option>
+                    <option value="1pl-ex">
+                      They and I are... (First person plural exclusive)
+                    </option>
+                    <option value="1dl-in">
+                      You and I are... (First person dual inclusive)
+                    </option>
+                    <option value="1pl-in">
+                      We all are... (First person plural inclusive)
+                    </option>
+                    <option value="2sg">
+                      You are... (Second person singular)
+                    </option>
+                    <option value="2dl">
+                      You two are... (Second person dual)
+                    </option>
+                    <option value="2pl">
+                      Y'all are... (Second person plural)
+                    </option>
+                    <option value="3sg">
+                      S/he/it is... (Third person singular)
+                    </option>
+                    <option value="3ns">
+                      They are... (Third person plural)
+                    </option>
+                  </select>
+                  <button id="random-pronoun" type="button">
+                    Random pronoun
+                  </button>
+                </div>
+                <div>
+                  <label for="verb">Verb</label>
+                  <div>
+                    <select name="verb">
+                      <option value="a²da²wo³³Ɂa²,A">
+                        -adawoɁa (bathing/swimming)
+                      </option>
+                      <option value="wo³³ni²ha²,A,ga">-woni (speaking)</option>
+                      <option value="we³³hli²ha²,A,ga">
+                        -wehliha (joking)
+                      </option>
+                      <option value="ye³³ga²,A">-yega (waking up)</option>
+                      <option value="a²²nhta²,B">-anhta (knowing)</option>
+                      <option value="li²³da³²sdi²ha²,B">
+                        -lidasdiha (making a mistake)
+                      </option>
+                      <!--                       <option value="e²³do³²ha²,A,h">
+                        -edoha (walking around at)
+                      </option> -->
+                      <!--                       <option value="e²³li³Ɂa²,A">
+                        -eliɁa (thinking it is so)
+                      </option> -->
+                      <option value="a²da²²nhta²,B">-adanhta (feeling)</option>
+                      <option value="a²du²²li³ha²,B">-aduliha (wanting)</option>
+                    </select>
+                    <button id="random-verb" type="button">Random verb</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr />
+            <div>
+              <div class="answers">
+                <p><strong id="answer">&nbsp;</strong></p>
+                <span id="answerExplanation">&nbsp;</span>
+              </div>
+              <label for="submitButton">
+                <strong id="answerLabel"> </strong>
+                <img id="diagram" />
+              </label>
+
+              <input type="submit" id="submitButton" value="Show" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- The footer holds our remix button — you can keep or delete it ✂ -->
+    <footer class="footer">
+      <div class="links"></div>
+      <a
+        class="btn--remix"
+        target="_top"
+        href="https://glitch.com/edit/#!/remix/glitch-hello-website"
+      >
+        <img
+          src="https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2FLogo_Color.svg?v=1618199565140"
+          alt=""
+        />
+        Remix on Glitch
+      </a>
+    </footer>
+  </body>
+</html>
