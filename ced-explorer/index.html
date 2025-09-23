@@ -55,10 +55,17 @@
             </label>
           </div>
           <div>
+            <label>
+              Only show sentences that have audio
+              <input name="requireAudio" type="checkbox" value="false" />
+            </label>
+          </div>
+          <div>
             <button class="next">Next</button>
           </div>
         </form>
         <div class="example-sentence">
+          <div id="audio-wrapper"></div>
           <!--           <h2>Random sentence...</h2> -->
           <p class="example-syllabary"></p>
           <p class="example-phonetics"></p>

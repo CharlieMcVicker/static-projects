@@ -7,6 +7,7 @@ function hasFields(word) {
     word.sentence.phonetics.includes("*") &&
     word.sentence.syllabary.includes("*") &&
     !word.sentence.phonetics.startsWith("[")
+    && (!requireAudio || word.sentence.audio)
   );
 }
 
@@ -75,6 +76,16 @@ function formatTone(text) {
 }
 
 function setExampleSentence(word) {
+  if(word.sentence.audio) {
+    const audioElm = document.createElement("audio");
+    audioElm.src = word.sentence.audio;
+    audioElm.controls = true;
+    audioElm.autoplay = true;
+    audioElm.style.display = "inline";
+    audioWrapper.replaceChildren(audioElm)
+  } else {
+    audioWrapper.innerHTML = "";
+  }
   sentenceSyllabary.innerHTML = boldAsterisk(word.sentence.syllabary);
   sentencePhonetics.innerHTML = boldAsterisk(word.sentence.phonetics);
   sentenceEnglish.innerHTML = "";
@@ -142,15 +153,23 @@ settingsForm.addEventListener("submit", (e) => {
 });
 
 let targetForm = settingsForm.elements["targetForm"].value;
+let requireAudio = settingsForm.elements["requireAudio"].value;
 let wordIds = null;
 
 settingsForm.elements["targetForm"].addEventListener("change", (e) => {e.preventDefault(); if (targetForm !== e.target.value) {
   targetForm = e.target.value;
-  wordIds = null;
+  wordIds = null; // force refiltering
 }})
+
+settingsForm.elements["requireAudio"].addEventListener("change", (e) => {e.preventDefault(); if (requireAudio !== e.target.value) {
+  requireAudio = e.target.value;
+  wordIds = null; // force refiltering
+}})
+
 const possibleForms = [...settingsForm.elements["targetForm"].children].map(e => e.value).filter(f => f!=="rand");
 console.log(possibleForms)
 
+const audioWrapper = document.querySelector("#audio-wrapper");
 const sentenceSyllabary = document.querySelector(".example-syllabary");
 const sentencePhonetics = document.querySelector(".example-phonetics");
 const sentenceEnglish = document.querySelector(".example-english");
