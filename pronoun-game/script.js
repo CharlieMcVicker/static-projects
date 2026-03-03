@@ -6,28 +6,7 @@
 // Use your menus or right-click / control-click and choose "Inspect" > "Console"
 console.log("Hello 🌎");
 
-const images = {
-  "1sg":
-    "https://cdn.glitch.global/260f0c79-ed14-4591-a951-564fdc449849/1sg.svg?v=1703299781919",
-  "1dl-ex":
-    "https://cdn.glitch.global/260f0c79-ed14-4591-a951-564fdc449849/1dl-ex.svg?v=1703299781616",
-  "1pl-ex":
-    "https://cdn.glitch.global/260f0c79-ed14-4591-a951-564fdc449849/1pl-ex.svg?v=1703299781380",
-  "1dl-in":
-    "https://cdn.glitch.global/260f0c79-ed14-4591-a951-564fdc449849/1dl-in.svg?v=1703299782983",
-  "1pl-in":
-    "https://cdn.glitch.global/260f0c79-ed14-4591-a951-564fdc449849/1pl-in.svg?v=1703299782226",
-  "2sg":
-    "https://cdn.glitch.global/260f0c79-ed14-4591-a951-564fdc449849/2sg.svg?v=1703299783310",
-  "2dl":
-    "https://cdn.glitch.global/260f0c79-ed14-4591-a951-564fdc449849/2dl.svg?v=1703299783595",
-  "2pl":
-    "https://cdn.glitch.global/260f0c79-ed14-4591-a951-564fdc449849/2pl.svg?v=1703299781123",
-  "3sg":
-    "https://cdn.glitch.global/260f0c79-ed14-4591-a951-564fdc449849/3sg.svg?v=1703299782628",
-  "3ns":
-    "https://cdn.glitch.global/260f0c79-ed14-4591-a951-564fdc449849/3ns.svg?v=1703299782450",
-};
+const makeImagePath = (person) => `/pronoun-game/pronoun-icons/${person}@2x.png`
 
 function selectRandomOption(selectElm) {
   let idx = Math.floor(Math.random() * (selectElm.childElementCount - 1));
@@ -93,7 +72,7 @@ function generatePrompt() {
 
 function updateAnswerLabel() {
   answerLabel.innerHTML = generatePrompt();
-  diagram.src = images[form.pronoun.value];
+  diagram.src = makeImagePath(form.pronoun.value);
 }
 
 function randomizeVerb() {
