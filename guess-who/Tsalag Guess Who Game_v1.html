@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eligwus hyadelohohi?</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .header { text-align: center; margin-bottom: 20px; color: #2c3e50; }
+        .board {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 15px;
+            max-width: 1000px;
+            width: 100%;
+        }
+        @media (max-width: 850px) { .board { grid-template-columns: repeat(4, 1fr); } }
+        @media (max-width: 600px) { .board { grid-template-columns: repeat(2, 1fr); } }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            padding: 10px;
+            text-align: center;
+            cursor: pointer;
+            position: relative;
+            transition: transform 0.2s, filter 0.3s, opacity 0.3s;
+            border: 3px solid #fff;
+        }
+        .card:hover { transform: scale(1.02); border-color: #3498db; }
+        .card.eliminated {
+            opacity: 0.2;
+            filter: grayscale(100%);
+            transform: scale(0.95);
+        }
+        .card.eliminated .overlay { display: flex; }
+
+        .number {
+            position: absolute;
+            top: 5px;
+            left: 10px;
+            font-weight: bold;
+            color: #bdc3c7;
+            font-size: 14px;
+            z-index: 10;
+        }
+        .avatar-box {
+            background: #ecf0f1;
+            height: 120px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+            overflow: hidden;
+        }
+        
+        .avatar-img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .name { font-size: 18px; font-weight: bold; color: #2c3e50; margin-bottom: 4px; padding-bottom: 6px; }
+
+        .overlay {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(231, 76, 60, 0.4);
+            color: white;
+            font-size: 80px;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+            pointer-events: none;
+            font-weight: bold;
+            z-index: 20;
+        }
+
+        .controls {
+            margin: 30px 0;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        button {
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .btn-primary { background: #3498db; color: white; }
+        .btn-primary:hover { background: #2980b9; }
+        .btn-danger { background: #e74c3c; color: white; }
+        .btn-danger:hover { background: #c0392b; }
+
+        .secret-panel {
+            background: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            min-width: 300px;
+            border: 4px solid #f1c40f;
+        }
+        #secret-name { font-size: 28px; color: #e67e22; font-weight: bold; margin-top: 10px; }
+
+        .help-section {
+            margin-top: 40px;
+            max-width: 800px;
+            width: 100%;
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+        .help-section h3 {
+            color: #2c3e50;
+            border-bottom: 2px solid #ecf0f1;
+            padding-bottom: 6px;
+            margin-top: 25px;
+        }
+        .help-section h3:first-of-type { margin-top: 15px; }
+        table { width: 100%; border-collapse: collapse; margin-bottom: 15px; }
+        th, td { padding: 10px 12px; border-bottom: 1px solid #eee; text-align: left; }
+        th { color: #7f8c8d; text-transform: uppercase; font-size: 12px; letter-spacing: 0.5px; }
+        td:first-child { font-weight: 500; color: #34495e; width: 45%; }
+        
+        .phonetic-cell { color: #2c3e50; font-family: 'Segoe UI', Arial, sans-serif; font-size: 15px; }
+        .phonetic-cell sup { font-size: 0.68em; font-weight: bold; color: #7f8c8d; margin: 0 1px; }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Eligwus yihadelohohi?</h1>
+        <p>Click cards to eliminate them based on your opponent's answers.</p>
+    </div>
+
+    <div class="board">
+        
+        <div class="card" onclick="toggleCard(this)" id="card-1">
+            <div class="card-inner">
+                <div class="number">1</div>
+                <div class="avatar-box">
+                    <img src="images/1.svg" alt="Kanati" class="avatar-img">
+                </div>
+                <div class="name">Kanati</div>
+                <div class="overlay">✕</div>
+            </div>
+        </div>
+    
+        <div class="card" onclick="toggleCard(this)" id="card-2">
+            <div class="card-inner">
+                <div class="number">2</div>
+                <div class="avatar-box">
+                    <img src="images/2.svg" alt="Tsimi" class="avatar-img">
+                </div>
+                <div class="name">Tsimi</div>
+                <div class="overlay">✕</div>
+            </div>
+        </div>
+    
+        <div class="card" onclick="toggleCard(this)" id="card-3">
+            <div class="card-inner">
+                <div class="number">3</div>
+                <div class="avatar-box">
+                    <img src="images/3.svg" alt="Tsali" class="avatar-img">
+                </div>
+                <div class="name">Tsali</div>
+                <div class="overlay">✕</div>
+            </div>
+        </div>
+    
+        <div class="card" onclick="toggleCard(this)" id="card-4">
+            <div class="card-inner">
+                <div class="number">4</div>
+                <div class="avatar-box">
+                    <img src="images/4.svg" alt="Iya" class="avatar-img">
+                </div>
+                <div class="name">Iya</div>
+                <div class="overlay">✕</div>
+            </div>
+        </div>
+    
+        <div class="card" onclick="toggleCard(this)" id="card-5">
+            <div class="card-inner">
+                <div class="number">5</div>
+                <div class="avatar-box">
+                    <img src="images/5.svg" alt="Unole" class="avatar-img">
+                </div>
+                <div class="name">Unole</div>
+                <div class="overlay">✕</div>
+            </div>
+        </div>
+    
+        <div class="card" onclick="toggleCard(this)" id="card-6">
+            <div class="card-inner">
+                <div class="number">6</div>
+                <div class="avatar-box">
+                    <img src="images/6.svg" alt="Unelag" class="avatar-img">
+                </div>
+                <div class="name">Unelag</div>
+                <div class="overlay">✕</div>
+            </div>
+        </div>
+    
+        <div class="card" onclick="toggleCard(this)" id="card-7">
+            <div class="card-inner">
+                <div class="number">7</div>
+                <div class="avatar-box">
+                    <img src="images/7.svg" alt="Amudehnv" class="avatar-img">
+                </div>
+                <div class="name">Amudehnv</div>
+                <div class="overlay">✕</div>
+            </div>
+        </div>
+    
+        <div class="card" onclick="toggleCard(this)" id="card-8">
+            <div class="card-inner">
+                <div class="number">8</div>
+                <div class="avatar-box">
+                    <img src="images/8.svg" alt="Amega" class="avatar-img">
+                </div>
+                <div class="name">Amega</div>
+                <div class="overlay">✕</div>
+            </div>
+        </div>
+    
+        <div class="card" onclick="toggleCard(this)" id="card-9">
+            <div class="card-inner">
+                <div class="number">9</div>
+                <div class="avatar-box">
+                    <img src="images/9.svg" alt="Walelu" class="avatar-img">
+                </div>
+                <div class="name">Walelu</div>
+                <div class="overlay">✕</div>
+            </div>
+        </div>
+    
+        <div class="card" onclick="toggleCard(this)" id="card-10">
+            <div class="card-inner">
+                <div class="number">10</div>
+                <div class="avatar-box">
+                    <img src="images/10.svg" alt="Tsani" class="avatar-img">
+                </div>
+                <div class="name">Tsani</div>
+                <div class="overlay">✕</div>
+            </div>
+        </div>
+    
+        <div class="card" onclick="toggleCard(this)" id="card-11">
+            <div class="card-inner">
+                <div class="number">11</div>
+                <div class="avatar-box">
+                    <img src="images/11.svg" alt="Tlvdatsi" class="avatar-img">
+                </div>
+                <div class="name">Tlvdatsi</div>
+                <div class="overlay">✕</div>
+            </div>
+        </div>
+    
+        <div class="card" onclick="toggleCard(this)" id="card-12">
+            <div class="card-inner">
+                <div class="number">12</div>
+                <div class="avatar-box">
+                    <img src="images/12.svg" alt="Daksi" class="avatar-img">
+                </div>
+                <div class="name">Daksi</div>
+                <div class="overlay">✕</div>
+            </div>
+        </div>
+    
+        <div class="card" onclick="toggleCard(this)" id="card-13">
+            <div class="card-inner">
+                <div class="number">13</div>
+                <div class="avatar-box">
+                    <img src="images/13.svg" alt="Watiyeli" class="avatar-img">
+                </div>
+                <div class="name">Watiyeli</div>
+                <div class="overlay">✕</div>
+            </div>
+        </div>
+    
+        <div class="card" onclick="toggleCard(this)" id="card-14">
+            <div class="card-inner">
+                <div class="number">14</div>
+                <div class="avatar-box">
+                    <img src="images/14.svg" alt="Selu" class="avatar-img">
+                </div>
+                <div class="name">Selu</div>
+                <div class="overlay">✕</div>
+            </div>
+        </div>
+    
+        <div class="card" onclick="toggleCard(this)" id="card-15">
+            <div class="card-inner">
+                <div class="number">15</div>
+                <div class="avatar-box">
+                    <img src="images/15.svg" alt="Doyi" class="avatar-img">
+                </div>
+                <div class="name">Doyi</div>
+                <div class="overlay">✕</div>
+            </div>
+        </div>
+    
+        <div class="card" onclick="toggleCard(this)" id="card-16">
+            <div class="card-inner">
+                <div class="number">16</div>
+                <div class="avatar-box">
+                    <img src="images/16.svg" alt="Dewa" class="avatar-img">
+                </div>
+                <div class="name">Dewa</div>
+                <div class="overlay">✕</div>
+            </div>
+        </div>
+    
+        <div class="card" onclick="toggleCard(this)" id="card-17">
+            <div class="card-inner">
+                <div class="number">17</div>
+                <div class="avatar-box">
+                    <img src="images/17.svg" alt="Dikanogisgi" class="avatar-img">
+                </div>
+                <div class="name">Dikanogisgi</div>
+                <div class="overlay">✕</div>
+            </div>
+        </div>
+    
+        <div class="card" onclick="toggleCard(this)" id="card-18">
+            <div class="card-inner">
+                <div class="number">18</div>
+                <div class="avatar-box">
+                    <img src="images/18.svg" alt="Nokwsi" class="avatar-img">
+                </div>
+                <div class="name">Nokwsi</div>
+                <div class="overlay">✕</div>
+            </div>
+        </div>
+    
+        <div class="card" onclick="toggleCard(this)" id="card-19">
+            <div class="card-inner">
+                <div class="number">19</div>
+                <div class="avatar-box">
+                    <img src="images/19.svg" alt="Gigage" class="avatar-img">
+                </div>
+                <div class="name">Gigage</div>
+                <div class="overlay">✕</div>
+            </div>
+        </div>
+    
+        <div class="card" onclick="toggleCard(this)" id="card-20">
+            <div class="card-inner">
+                <div class="number">20</div>
+                <div class="avatar-box">
+                    <img src="images/20.svg" alt="Tseg" class="avatar-img">
+                </div>
+                <div class="name">Tseg</div>
+                <div class="overlay">✕</div>
+            </div>
+        </div>
+
+        <div class="card" onclick="toggleCard(this)" id="card-21">
+            <div class="card-inner">
+                <div class="number">21</div>
+                <div class="avatar-box">
+                    <img src="images/21.svg" alt="Inada" class="avatar-img">
+                </div>
+                <div class="name">Inada</div>
+                <div class="overlay">✕</div>
+            </div>
+        </div>
+
+        <div class="card" onclick="toggleCard(this)" id="card-22">
+            <div class="card-inner">
+                <div class="number">22</div>
+                <div class="avatar-box">
+                    <img src="images/22.svg" alt="Ahwegwa" class="avatar-img">
+                </div>
+                <div class="name">Ahwegwa</div>
+                <div class="overlay">✕</div>
+            </div>
+        </div>
+
+        <div class="card" onclick="toggleCard(this)" id="card-23">
+            <div class="card-inner">
+                <div class="number">23</div>
+                <div class="avatar-box">
+                    <img src="images/23.svg" alt="Ditasgisgi" class="avatar-img">
+                </div>
+                <div class="name">Ditasgisgi</div>
+                <div class="overlay">✕</div>
+            </div>
+        </div>
+
+        <div class="card" onclick="toggleCard(this)" id="card-24">
+            <div class="card-inner">
+                <div class="number">24</div>
+                <div class="avatar-box">
+                    <img src="images/24.svg" alt="Magida" class="avatar-img">
+                </div>
+                <div class="name">Magida</div>
+                <div class="overlay">✕</div>
+            </div>
+        </div>
+
+        <div class="card" onclick="toggleCard(this)" id="card-25">
+            <div class="card-inner">
+                <div class="number">25</div>
+                <div class="avatar-box">
+                    <img src="images/25.svg" alt="Tsuksvsd" class="avatar-img">
+                </div>
+                <div class="name">Tsuksvsd</div>
+                <div class="overlay">✕</div>
+            </div>
+        </div>
+    
+    </div>
+
+    <div class="controls">
+        <button class="btn-primary" onclick="pickSecret()">Pick My Secret Person</button>
+        <button class="btn-danger" onclick="resetGame()">Reset Board</button>
+    </div>
+
+    <div class="secret-panel" id="secret-panel" style="display:none;">
+        <div>Your Secret Character is:</div>
+        <div id="secret-name">---</div>
+        <div style="margin-top: 10px; font-size: 12px; color: #bdc3c7;">(Keep this hidden from your opponent!)</div>
+    </div>
+
+    <div class="help-section">
+        <h2>Starter Questions</h2>
+        
+        <h3>Hair</h3>
+        <table>
+            <thead>
+                <tr><th>English Question</th><th>Cherokee Phrase (Phonetic)</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Does s/he have black hair?</td><td class="phonetic-cell">Gv<sup>23</sup>hna<sup>3</sup>ge<sup>44</sup>’i<sup>2</sup>s u<sup>22</sup>sti<sup>2</sup>yhkv<sup>4</sup>?</td></tr>
+                <tr><td>Does s/he have blond hair?</td><td class="phonetic-cell">Da<sup>2</sup>lo<sup>23</sup>ni<sup>3</sup>ge<sup>44</sup>’i<sup>2</sup>s u<sup>22</sup>sti<sup>2</sup>yhkv<sup>4</sup>?</td></tr>
+                <tr><td>Is s/he blond(e)?</td><td class="phonetic-cell">U<sup>22</sup>sti<sup>2</sup>tsi<sup>23</sup>lv<sup>44</sup>hi<sup>2</sup>tsu<sup>3</sup>?</td></tr>
+                <tr><td>Does s/he have brown hair?</td><td class="phonetic-cell">U<sup>22</sup>wo<sup>23</sup>di<sup>3</sup>ge<sup>44</sup>’i<sup>2</sup>s u<sup>22</sup>sti<sup>2</sup>yhkv<sup>4</sup>?</td></tr>
+                <tr><td>Does s/he have red hair?</td><td class="phonetic-cell">Gi<sup>23</sup>ga<sup>3</sup>ge<sup>44</sup>’i<sup>2</sup>s u<sup>22</sup>sti<sup>2</sup>yhkv<sup>4</sup>?</td></tr>
+                <tr><td>Is her hair gray (smoke-colored)?</td><td class="phonetic-cell">Di<sup>22</sup>ksv<sup>23</sup>sdi<sup>3</sup>ge<sup>4</sup> u<sup>22</sup>sti<sup>2</sup>yhkv<sup>4</sup>?</td></tr>
+                <tr><td>Is her/his hair braided?</td><td class="phonetic-cell">A<sup>22</sup>sde<sup>23</sup>yo<sup>32</sup>hlta<sup>2</sup>nv<sup>44</sup>hi<sup>3</sup>tsu<sup>3</sup> u<sup>22</sup>sti<sup>2</sup>yhkv<sup>4</sup>?</td></tr>
+                <tr><td>Is her/his hair long?</td><td class="phonetic-cell">Ga<sup>2</sup>nv<sup>22</sup>hi<sup>44</sup>da<sup>2</sup>s u<sup>22</sup>sti<sup>2</sup>yhkv<sup>4</sup>?</td></tr>
+                <tr><td>Is her/his hair short?</td><td class="phonetic-cell">A<sup>2</sup>sgwa<sup>2</sup>la<sup>3</sup>tsu<sup>3</sup> u<sup>22</sup>sti<sup>2</sup>yhkv<sup>4</sup>?</td></tr>
+                <tr><td>Is s/he bald?</td><td class="phonetic-cell">U<sup>22</sup>ge<sup>22</sup>wo<sup>44</sup>di<sup>2</sup>s?</td></tr>
+                <tr><td>Does he have a beard?</td><td class="phonetic-cell">A<sup>22</sup>hyu<sup>2</sup>hga<sup>2</sup>nu<sup>22</sup>lv<sup>44</sup>hi<sup>3</sup>tsu<sup>3</sup>?</td></tr>
+                <tr><td>Does he have a mustache?</td><td class="phonetic-cell">A<sup>22</sup>ha<sup>2</sup>nu<sup>22</sup>lv<sup>44</sup>hi<sup>3</sup>tsu<sup>3</sup>?</td></tr>
+                <tr><td>Is her/his hair curly?</td><td class="phonetic-cell">U<sup>22</sup>l(i)tsi<sup>22</sup>sgwa<sup>2</sup>ne<sup>44</sup>da<sup>3</sup>tsu<sup>3</sup> u<sup>22</sup>sti<sup>2</sup>yhgv<sup>4</sup>?</td></tr>
+                <tr><td>Is her/his hair straight?</td><td class="phonetic-cell">Ga<sup>22</sup>chi<sup>2</sup>no<sup>44</sup>sda<sup>3</sup>tsu<sup>3</sup> u<sup>22</sup>sti<sup>2</sup>yhgv<sup>4</sup>?</td></tr>
+            </tbody>
+        </table>
+
+        <h3>Accessories</h3>
+        <table>
+            <thead>
+                <tr><th>English Question</th><th>Cherokee Phrase (Phonetic)</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Is s/he wearing a hat (with a brim)?</td><td class="phonetic-cell">U<sup>21</sup>lsgwe<sup>33</sup>tu<sup>2</sup>hgi<sup>2</sup>s?</td></tr>
+                <tr><td>Is s/he wearing a cap (ballcap or beanie)?</td><td class="phonetic-cell">U<sup>21</sup>lsdu<sup>33</sup>la<sup>2</sup>s?</td></tr>
+                <tr><td>Is s/he wearing glasses?</td><td class="phonetic-cell">Du<sup>21</sup>kti<sup>22</sup>nv<sup>22</sup>ta<sup>3</sup>tsu<sup>3</sup>?</td></tr>
+                <tr><td>Is s/he wearing a scarf?</td><td class="phonetic-cell">A<sup>2</sup>lsgwa<sup>2</sup>no<sup>23</sup>sdo<sup>3</sup>hdi<sup>2</sup>s nu<sup>21</sup>wa<sup>33</sup>nhdi<sup>2</sup>(<sup>3</sup>ha<sup>2</sup>)?</td></tr>
+                <tr><td>Is s/he wearing a headband?</td><td class="phonetic-cell">A<sup>2</sup>lgv<sup>22</sup>da<sup>2</sup>no<sup>23</sup>sdo<sup>3</sup>hdi<sup>2</sup>s nu<sup>21</sup>wa<sup>33</sup>nhdi<sup>2</sup>(<sup>3</sup>ha<sup>2</sup>)?</td></tr>
+            </tbody>
+        </table>
+
+        <h3>Demographics</h3>
+        <table>
+            <thead>
+                <tr><th>English Question</th><th>Cherokee Phrase (Phonetic)</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Is s/he old?</td><td class="phonetic-cell">A<sup>22</sup>ga<sup>2</sup>yv<sup>23</sup>li<sup>3</sup>ge<sup>44</sup>’i<sup>2</sup>s?</td></tr>
+                <tr><td>Is s/he young?</td><td class="phonetic-cell">A<sup>3</sup>da<sup>2</sup>ge<sup>44</sup>’i<sup>2</sup>s?</td></tr>
+                <tr><td>Is s/he a child?</td><td class="phonetic-cell">A<sup>2</sup>yo<sup>44</sup>hli<sup>2</sup>s?</td></tr>
+                <tr><td>Is she a teen (female)?</td><td class="phonetic-cell">A<sup>44</sup>ta<sup>2</sup>tsu<sup>3</sup>?</td></tr>
+                <tr><td>Is he a teen (male)?</td><td class="phonetic-cell">A<sup>2</sup>wi<sup>44</sup>ni<sup>2</sup>s?</td></tr>
+                <tr><td>Is s/he an adult?</td><td class="phonetic-cell">U<sup>44</sup>ta<sup>2</sup>ni<sup>2</sup>s?</td></tr>
+                <tr><td>Is s/he a woman?</td><td class="phonetic-cell">A<sup>2</sup>ge<sup>23</sup>hya<sup>2</sup>tsu<sup>3</sup>?</td></tr>
+                <tr><td>Is s/he a man?</td><td class="phonetic-cell">A<sup>2</sup>sga<sup>2</sup>yi<sup>2</sup>s?</td></tr>
+                <tr><td>Is s/he Cherokee?</td><td class="phonetic-cell">A<sup>2</sup>tsa<sup>2</sup>la<sup>2</sup>gi<sup>2</sup>s?</td></tr>
+                <tr><td>Is s/he Native?</td><td class="phonetic-cell">A<sup>2</sup>ne<sup>44</sup>hi<sup>23</sup>ya<sup>3</sup>tsu<sup>3</sup>?</td></tr>
+                <tr><td>Is s/he white?</td><td class="phonetic-cell">A<sup>2</sup>yv<sup>22</sup>wu<sup>2</sup>ne<sup>44</sup>ga<sup>2</sup>s?</td></tr>
+                <tr><td>Is s/he Black?</td><td class="phonetic-cell">A<sup>2</sup>gv<sup>23</sup>hna<sup>3</sup>ge<sup>44</sup>’i<sup>2</sup>s?</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        const names = ['Kanati', 'Tsimi', 'Tsali', 'Iya', 'Unole', 'Unelag', 'Amudehnv', 'Amega', 'Walelu', 'Tsani', 'Tlvdatsi', 'Daksi', 'Watiyeli', 'Selu', 'Doyi', 'Dewa', 'Dikanogisgi', 'Nokwsi', 'Gigage', 'Tseg', 'Inada', 'Ahwegwa', 'Ditasgisgi', 'Magida', 'Tsuksvsd'];
+
+        function toggleCard(card) {
+            card.classList.toggle('eliminated');
+        }
+
+        function resetGame() {
+            document.querySelectorAll('.card').forEach(c => c.classList.remove('eliminated'));
+        }
+
+        function pickSecret() {
+            const random = Math.floor(Math.random() * names.length);
+            document.getElementById('secret-name').innerText = names[random];
+            document.getElementById('secret-panel').style.display = 'block';
+            window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+        }
+    </script>
+
+</body>
+</html>
