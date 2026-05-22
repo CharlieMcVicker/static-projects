@@ -14,6 +14,25 @@
             align-items: center;
             padding: 20px;
         }
+        .main-layout {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            width: 100%;
+            max-width: 1400px;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        .board-column {
+            flex: 1 1 600px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .sidebar-column {
+            flex: 1 1 400px;
+            width: 100%;
+        }
         .header { text-align: center; margin-bottom: 20px; color: #2c3e50; }
         .board {
             display: grid;
@@ -120,21 +139,35 @@
         #secret-name { font-size: 28px; color: #e67e22; font-weight: bold; margin-top: 10px; }
 
         .help-section {
-            margin-top: 40px;
-            max-width: 800px;
+            margin-top: 0;
             width: 100%;
             background: white;
             padding: 25px;
             border-radius: 12px;
             box-shadow: 0 4px 10px rgba(0,0,0,0.05);
         }
-        .help-section h3 {
-            color: #2c3e50;
-            border-bottom: 2px solid #ecf0f1;
-            padding-bottom: 6px;
-            margin-top: 25px;
+        .help-section h2 { margin-top: 0; color: #2c3e50; font-size: 24px; font-weight: 800; }
+        .tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
         }
-        .help-section h3:first-of-type { margin-top: 15px; }
+        .tab-btn {
+            padding: 8px 18px;
+            background-color: #eadfdf;
+            color: #2c3e50;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 14px;
+            transition: background-color 0.2s;
+        }
+        .tab-btn.active { background-color: #e6a0a0; color: #fff; }
+        .tab-btn:hover:not(.active) { background-color: #e0cfcf; }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
         table { width: 100%; border-collapse: collapse; margin-bottom: 15px; }
         th, td { padding: 10px 12px; border-bottom: 1px solid #eee; text-align: left; }
         th { color: #7f8c8d; text-transform: uppercase; font-size: 12px; letter-spacing: 0.5px; }
@@ -151,7 +184,9 @@
         <p>Click cards to eliminate them based on your opponent's answers.</p>
     </div>
 
-    <div class="board">
+    <div class="main-layout">
+        <div class="board-column">
+            <div class="board">
         
         <div class="card" onclick="toggleCard(this)" id="card-1">
             <div class="card-inner">
@@ -440,12 +475,20 @@
         <div id="secret-name">---</div>
         <div style="margin-top: 10px; font-size: 12px; color: #bdc3c7;">(Keep this hidden from your opponent!)</div>
     </div>
+        </div>
 
-    <div class="help-section">
-        <h2>Starter Questions</h2>
-        
-        <h3>Hair</h3>
-        <table>
+        <div class="sidebar-column">
+            <div class="help-section">
+                <h2>Starter Questions</h2>
+                
+                <div class="tabs">
+                    <button class="tab-btn active" onclick="showTab('hair', this)">Hair</button>
+                    <button class="tab-btn" onclick="showTab('accessories', this)">Accessories</button>
+                    <button class="tab-btn" onclick="showTab('demographics', this)">Demographics</button>
+                </div>
+
+                <div id="tab-hair" class="tab-content active">
+                    <table>
             <thead>
                 <tr><th>English Question</th><th>Cherokee Phrase (Phonetic)</th></tr>
             </thead>
@@ -466,8 +509,9 @@
                 <tr><td>Is her/his hair straight?</td><td class="phonetic-cell">Ga<sup>22</sup>chi<sup>2</sup>no<sup>44</sup>sda<sup>3</sup>tsu<sup>3</sup> u<sup>22</sup>sti<sup>2</sup>yhgv<sup>4</sup>?</td></tr>
             </tbody>
         </table>
+                </div>
 
-        <h3>Accessories</h3>
+                <div id="tab-accessories" class="tab-content">
         <table>
             <thead>
                 <tr><th>English Question</th><th>Cherokee Phrase (Phonetic)</th></tr>
@@ -480,8 +524,9 @@
                 <tr><td>Is s/he wearing a headband?</td><td class="phonetic-cell">A<sup>2</sup>lgv<sup>22</sup>da<sup>2</sup>no<sup>23</sup>sdo<sup>3</sup>hdi<sup>2</sup>s nu<sup>21</sup>wa<sup>33</sup>nhdi<sup>2</sup>(<sup>3</sup>ha<sup>2</sup>)?</td></tr>
             </tbody>
         </table>
+                </div>
 
-        <h3>Demographics</h3>
+                <div id="tab-demographics" class="tab-content">
         <table>
             <thead>
                 <tr><th>English Question</th><th>Cherokee Phrase (Phonetic)</th></tr>
@@ -501,10 +546,20 @@
                 <tr><td>Is s/he Black?</td><td class="phonetic-cell">A<sup>2</sup>gv<sup>23</sup>hna<sup>3</sup>ge<sup>44</sup>’i<sup>2</sup>s?</td></tr>
             </tbody>
         </table>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script>
         const names = ['Kanati', 'Tsimi', 'Tsali', 'Iya', 'Unole', 'Unelag', 'Amudehnv', 'Amega', 'Walelu', 'Tsani', 'Tlvdatsi', 'Daksi', 'Watiyeli', 'Selu', 'Doyi', 'Dewa', 'Dikanogisgi', 'Nokwsi', 'Gigage', 'Tseg', 'Inada', 'Ahwegwa', 'Ditasgisgi', 'Magida', 'Tsuksvsd'];
+
+        function showTab(tabId, btn) {
+            document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+            document.getElementById('tab-' + tabId).classList.add('active');
+            btn.classList.add('active');
+        }
 
         function toggleCard(card) {
             card.classList.toggle('eliminated');
