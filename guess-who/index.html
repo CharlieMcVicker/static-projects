@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eligwus hyadelohohi?</title>
     <style>
+        * {
+            box-sizing: border-box;
+        }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #f4f7f6;
@@ -33,7 +36,7 @@
             flex: 1 1 400px;
             width: 100%;
         }
-        .header { text-align: center; margin-bottom: 20px; color: #2c3e50; }
+        .header { text-align: center; margin-bottom: 15px; color: #2c3e50; }
         .board {
             display: grid;
             grid-template-columns: repeat(5, 1fr);
@@ -62,6 +65,10 @@
             transform: scale(0.95);
         }
         .card.eliminated .overlay { display: flex; }
+        .card.secret-highlight {
+            border-color: #f1c40f;
+            box-shadow: 0 0 15px rgba(241, 196, 15, 0.6);
+        }
 
         .number {
             position: absolute;
@@ -107,15 +114,16 @@
         }
 
         .controls {
-            margin: 30px 0;
+            margin: 15px 0 10px 0;
             display: flex;
-            gap: 20px;
+            gap: 15px;
             flex-wrap: wrap;
             justify-content: center;
+            align-items: center;
         }
         button {
-            padding: 12px 24px;
-            font-size: 16px;
+            padding: 8px 16px;
+            font-size: 14px;
             font-weight: bold;
             border: none;
             border-radius: 8px;
@@ -129,14 +137,15 @@
 
         .secret-panel {
             background: #fff;
-            padding: 20px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            text-align: center;
-            min-width: 300px;
-            border: 4px solid #f1c40f;
+            padding: 6px 12px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            border: 2px solid #f1c40f;
+            display: flex;
+            align-items: center;
+            gap: 8px;
         }
-        #secret-name { font-size: 28px; color: #e67e22; font-weight: bold; margin-top: 10px; }
+        #secret-name { font-size: 16px; color: #e67e22; font-weight: bold; }
 
         .help-section {
             margin-top: 0;
@@ -179,13 +188,21 @@
 </head>
 <body>
 
-    <div class="header">
-        <h1>Eligwus yihadelohohi?</h1>
-        <p>Click cards to eliminate them based on your opponent's answers.</p>
-    </div>
-
     <div class="main-layout">
         <div class="board-column">
+            <div class="header">
+                <h1 style="margin-top: 0;">Eligwus yihadelohohi?</h1>
+                <p>Click cards to eliminate them based on your opponent's answers.</p>
+                <div class="controls">
+                    <button class="btn-primary" onclick="pickSecret()">Pick My Secret Person</button>
+                    <button class="btn-danger" onclick="resetGame()">Reset Board</button>
+                    <div class="secret-panel" id="secret-panel" style="display:none;">
+                        <span style="font-size: 14px; color: #7f8c8d;">Your Secret:</span>
+                        <span id="secret-name">---</span>
+                    </div>
+                </div>
+            </div>
+
             <div class="board">
         
         <div class="card" onclick="toggleCard(this)" id="card-1">
@@ -464,17 +481,6 @@
         </div>
     
     </div>
-
-    <div class="controls">
-        <button class="btn-primary" onclick="pickSecret()">Pick My Secret Person</button>
-        <button class="btn-danger" onclick="resetGame()">Reset Board</button>
-    </div>
-
-    <div class="secret-panel" id="secret-panel" style="display:none;">
-        <div>Your Secret Character is:</div>
-        <div id="secret-name">---</div>
-        <div style="margin-top: 10px; font-size: 12px; color: #bdc3c7;">(Keep this hidden from your opponent!)</div>
-    </div>
         </div>
 
         <div class="sidebar-column">
@@ -566,14 +572,21 @@
         }
 
         function resetGame() {
-            document.querySelectorAll('.card').forEach(c => c.classList.remove('eliminated'));
+            document.querySelectorAll('.card').forEach(c => {
+                c.classList.remove('eliminated');
+                c.classList.remove('secret-highlight');
+            });
+            document.getElementById('secret-panel').style.display = 'none';
         }
 
         function pickSecret() {
             const random = Math.floor(Math.random() * names.length);
             document.getElementById('secret-name').innerText = names[random];
-            document.getElementById('secret-panel').style.display = 'block';
-            window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+            document.getElementById('secret-panel').style.display = 'flex';
+            
+            document.querySelectorAll('.card').forEach(c => c.classList.remove('secret-highlight'));
+            const cardId = `card-${random + 1}`;
+            document.getElementById(cardId).classList.add('secret-highlight');
         }
     </script>
 
