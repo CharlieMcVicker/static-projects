@@ -1,0 +1,407 @@
+/******************************************************************************
+START Glitch hello-app default styles
+
+The styles in this section do some minimal CSS resets, set default fonts and 
+colors, and handle the layout for our footer and "Remix on Glitch" button. If
+you're new to CSS they may seem a little complicated, but you can scroll down
+to this section's matching END comment to see page-specific styles.
+******************************************************************************/
+
+/* Our default values set as CSS variables */
+:root {
+  --color-bg: #69F7BE;
+  --color-text-main: #000000;
+  --color-bad: #E27396;
+  --color-good: #28a745;
+  --color-primary: #FFFF00;
+  --color-accent: #2800FF;
+  --wrapper-height: 87vh;
+  --image-max-width: 300px;
+  --image-margin: 3rem;
+  --font-family: "HK Grotesk", system-ui, -apple-system, sans-serif;
+  --font-family-header: "HK Grotesk", system-ui, -apple-system, sans-serif;
+}
+
+/* Basic page style resets */
+* {
+  box-sizing: border-box;
+}
+[hidden] {
+  display: none !important;
+}
+
+/* Import fonts */
+@font-face {
+  font-family: HK Grotesk;
+  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Regular.otf?v=1603136326027")
+    format("opentype");
+}
+@font-face {
+  font-family: HK Grotesk;
+  font-weight: bold;
+  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Bold.otf?v=1603136323437")
+    format("opentype");
+}
+
+/* Our remix on glitch button */
+.btn--remix {
+  font-family: var(--font-family);
+  padding: 0.75rem 1rem;
+  font-size: 1.1rem;
+  line-height: 1rem;
+  font-weight: 500;
+  height: 2.75rem;
+  align-items: center;
+  cursor: pointer;
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #000;
+  white-space: nowrap;
+  margin-left: auto;
+}
+.btn--remix img {
+  margin-right: 0.5rem;
+}
+.btn--remix:hover {
+  background-color: #D0FFF1;
+}
+
+/* Navigation grid */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem auto 0;
+  padding: 1rem 0 0.75rem 0;
+  width: 100%;
+  flex-wrap: wrap;
+  border-top: 4px solid #fff;
+}
+
+.footer a:not(.btn--remix):link,
+a:not(.btn--remix):visited {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.1rem;
+  text-decoration: none;
+  border-style: none;
+}
+.footer a:hover {
+  background: var(--color-primary);
+}
+
+.footer .links {
+  padding: 0.5rem 1rem 1.5rem;
+  white-space: nowrap;
+}
+
+.divider {
+  padding: 0 1rem;
+}
+/******************************************************************************
+END Glitch hello-app default styles
+******************************************************************************/
+
+body {
+  font-family: var(--font-family);
+  font-size: 1.2em;
+  background-color: var(--color-bg);
+  margin: 0;
+  color: var(--color-text-main);
+}
+
+/* Page structure */
+.wrapper {
+  min-height: var(--wrapper-height);
+  display: grid;
+  place-items: center;
+  margin: 0 1rem;
+  padding: 1rem 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 720px;
+}
+
+/* Title & Subtitle */
+.title {
+  color: var(--color-accent);
+  font-family: var(--font-family-header);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 105%;
+  margin: 0;
+  text-align: center;
+}
+
+.subtitle {
+  margin: 0.5rem 0 1rem 0;
+  text-align: center;
+  font-weight: 500;
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 45px;
+  }
+}
+
+/* Settings Form */
+.settings {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.settings select,
+.settings input[type="checkbox"] {
+  margin-left: 0.3rem;
+  cursor: pointer;
+}
+
+/* Buttons and Inputs */
+button,
+input[type="text"],
+select {
+  font-family: inherit;
+  font-size: 100%;
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  transition: 200ms ease-in-out;
+}
+
+button {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #f0f0f0;
+}
+
+button:active {
+  transform: translateY(2px);
+}
+
+.next {
+  margin: 5px auto 0;
+  display: block;
+}
+
+/* Example Sentence Card */
+.example-sentence {
+  padding: 15px;
+  font-size: 1.4em;
+  text-align: center;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .example-sentence {
+    font-size: 1.15em;
+  }
+}
+
+.example-sentence p {
+  margin: 0.4rem 0;
+}
+
+.example-sentence strong {
+  text-decoration: underline;
+  color: var(--color-accent);
+}
+
+.example-syllabary {
+  font-size: 1.4em;
+  letter-spacing: 0.05em;
+}
+
+.example-phonetics {
+  font-size: 1.1em;
+}
+
+.example-english {
+  margin: 12px 0 !important;
+  font-style: italic;
+  color: #1a1a1a;
+  min-height: 1.4em;
+}
+
+#audio-wrapper {
+  margin-bottom: 0.5rem;
+}
+
+#audio-wrapper audio {
+  max-width: 100%;
+  height: 40px;
+}
+
+/* Write-in Card */
+.write-in-wrapper {
+  background: white;
+  border: 1px solid black;
+  box-shadow: 4px 4px 0px rgba(0,0,0,0.15);
+  margin: 0 auto;
+  width: 100%;
+  padding: 24px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.target-form-prompt {
+  font-size: 1.15em;
+  text-align: center;
+}
+
+.target-form-prompt strong {
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+
+.prompt-instruction {
+  font-size: 0.95em;
+  text-align: center;
+  margin: 0;
+  color: #444;
+}
+
+.answer-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 6px;
+}
+
+.input-row {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+}
+
+#answer-input {
+  flex: 1;
+  font-size: 1.1em;
+  padding: 0.6rem 0.8rem;
+  border: 2px solid #000;
+  border-radius: 6px;
+}
+
+#answer-input.input-correct {
+  border-color: #28a745;
+  background-color: #eafaf1;
+}
+
+#answer-input.input-incorrect {
+  border-color: var(--color-bad);
+  background-color: #fdf0f4;
+}
+
+#check-btn {
+  background: var(--color-primary);
+  border: 2px solid #000;
+  border-radius: 6px;
+  font-size: 1.05em;
+  padding: 0.6rem 1.2rem;
+}
+
+#check-btn:hover {
+  background: #ffeb3b;
+}
+
+.button-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.secondary-btn {
+  background: #f8f9fa;
+  border: 1px solid #666;
+  border-radius: 6px;
+  font-size: 0.95em;
+  font-weight: normal;
+  padding: 0.45rem 0.9rem;
+}
+
+.action-btn {
+  background: var(--color-bg);
+  border: 2px solid #000;
+  border-radius: 6px;
+  font-size: 0.95em;
+  padding: 0.45rem 1rem;
+}
+
+.action-btn:hover {
+  background: #52e4ab;
+}
+
+/* Feedback wrapper */
+.feedback-wrapper {
+  margin-top: 8px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: #fbfbfb;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.feedback-message {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.feedback-message.correct {
+  color: #1b7430;
+}
+
+.feedback-message.incorrect {
+  color: #c82333;
+}
+
+.feedback-message.revealed {
+  color: var(--color-accent);
+}
+
+.answer-details {
+  font-size: 1.05em;
+  line-height: 1.4;
+}
+
+.target-answer-word {
+  font-size: 1.2em;
+  margin-bottom: 4px;
+}
+
+.simple-hint {
+  color: #555;
+  font-size: 0.9em;
+}
+
+.target-definition {
+  font-size: 0.95em;
+  color: #222;
+}
+
+.target-definition a {
+  color: var(--color-accent);
+  font-weight: bold;
+  text-decoration: underline;
+}

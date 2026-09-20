@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+    <title>CED Write-In Game!</title>
+    <!-- The website stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- The website JavaScript file -->
+    <script type="module" src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="content" role="main">
+        <h1 class="title">CED Explorer!</h1>
+        <p class="subtitle">Write-in Practice — Explore the Cherokee English Dictionary!</p>
+        <form class="settings">
+          <div>
+            <label>
+              Target form:
+              <select name="targetForm" id="targetForm">
+                <option value="third_present">Third person present</option>
+                <option value="first_present">First person present</option>
+                <option value="third_completive_past">
+                  Third person completive past
+                </option>
+                <option value="third_incompletive_habitual">
+                  Third person habitual
+                </option>
+                <option value="second_command">Second person imperative</option>
+                <option value="third_infinitive">
+                  Third person infinitive
+                </option>
+                <option value="rand">Random form</option>
+              </select>
+            </label>
+          </div>
+          <div>
+            <label>
+              Only show sentences that have audio
+              <input name="requireAudio" id="requireAudio" type="checkbox" />
+            </label>
+          </div>
+          <div>
+            <button type="submit" class="next">Next</button>
+          </div>
+        </form>
+
+        <div class="example-sentence">
+          <div id="audio-wrapper"></div>
+          <p class="example-syllabary"></p>
+          <p class="example-phonetics"></p>
+          <p class="example-english"></p>
+        </div>
+
+        <div class="write-in-wrapper">
+          <div class="target-form-prompt">
+            Target form: <strong id="target-form-name">Third person present</strong>
+          </div>
+          <p class="prompt-instruction">Type the target form of the underlined word (without tone markings):</p>
+          
+          <form class="answer-form">
+            <div class="input-row">
+              <input
+                type="text"
+                id="answer-input"
+                placeholder="Type verb without tone numbers (e.g. gadadega)..."
+                autocomplete="off"
+                autocapitalize="off"
+                spellcheck="false"
+                autofocus
+              />
+              <button type="submit" id="check-btn">Check</button>
+            </div>
+            <div class="button-row">
+              <button type="button" id="reveal-btn" class="secondary-btn">Reveal Answer</button>
+              <button type="button" id="next-card-btn" class="action-btn">Next Word →</button>
+            </div>
+          </form>
+
+          <div id="feedback-wrapper" class="feedback-wrapper" hidden>
+            <div id="feedback-message" class="feedback-message"></div>
+            <div id="answer-details" class="answer-details"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="links"></div>
+      <a
+        class="btn--remix"
+        target="_top"
+        href="https://glitch.com/edit/#!/remix/glitch-hello-website"
+      >
+        <img
+          src="https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2FLogo_Color.svg?v=1618199565140"
+          alt=""
+        />
+        Remix on Glitch
+      </a>
+    </footer>
+  </body>
+</html>
