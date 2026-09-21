@@ -75,14 +75,19 @@ export function formatTemplate(verb, kaLabel = "Set A (ga)") {
   // 4. Root
   const hRoot = morph.h_grade_root || "";
   const gRoot = morph.glottal_grade_root || "";
-  let rootStr = hRoot;
-  if (gRoot && gRoot !== hRoot) {
-    rootStr += ` / ${gRoot}`;
-  }
-  const commRoot = unrespellConsonants(rootStr) || morph.root || "ROOT";
+  const hComm = unrespellConsonants(hRoot);
+  const gComm = unrespellConsonants(gRoot);
 
-  plainParts.push(commRoot);
-  htmlParts.push(`<strong class="template-root">${commRoot}</strong>`);
+  if (hComm && gComm && hComm !== gComm) {
+    plainParts.push(`${hComm}/${gComm}`);
+    htmlParts.push(
+      `<span class="template-root-stacked"><strong class="template-root">${hComm}</strong><strong class="template-root">${gComm}</strong></span>`
+    );
+  } else {
+    const commRoot = hComm || gComm || unrespellConsonants(morph.root) || "ROOT";
+    plainParts.push(commRoot);
+    htmlParts.push(`<strong class="template-root">${commRoot}</strong>`);
+  }
 
   // 5. Post Root Morpheme
   const prmForm = morph.post_root_form || morph.post_root_morpheme;

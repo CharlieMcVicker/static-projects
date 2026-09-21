@@ -116,15 +116,19 @@ def build_template_parts(verb: dict, prm_map: dict[str, str], ka_label: str = "S
     # 4. Root
     h_root = morph.get("h_grade_root", "")
     g_root = morph.get("glottal_grade_root", "")
-    root_str = h_root
-    if g_root and g_root != h_root:
-        root_str += f" / {g_root}"
-    comm_root = unrespell_consonants(root_str)
-    if not comm_root:
-        comm_root = "ROOT"
+    h_comm = unrespell_consonants(h_root)
+    g_comm = unrespell_consonants(g_root)
 
-    plain_parts.append(comm_root)
-    html_parts.append(f'<strong class="template-root">{comm_root}</strong>')
+    if h_comm and g_comm and h_comm != g_comm:
+        comm_root = f"{h_comm}/{g_comm}"
+        plain_parts.append(comm_root)
+        html_parts.append(
+            f'<span class="template-root-stacked"><strong class="template-root">{h_comm}</strong><strong class="template-root">{g_comm}</strong></span>'
+        )
+    else:
+        comm_root = h_comm or g_comm or unrespell_consonants(morph.get("root", "")) or "ROOT"
+        plain_parts.append(comm_root)
+        html_parts.append(f'<strong class="template-root">{comm_root}</strong>')
 
     # 5. Post Root Morpheme
     prm_name = morph.get("post_root_morpheme")

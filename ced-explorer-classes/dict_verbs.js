@@ -933,11 +933,11 @@ export const dict = {
       "english": "*Turn it* to the left.",
       "audio": "https://cherokeenationdictionary.net/Audio/Sentence_for_entry_0797.m4a"
     },
-    "template": "Set A (ga)-:dehysd / :deyasd-[ih-ohd]",
-    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A (ga)</span>-<strong class=\"template-root\">:dehysd / :deyasd</strong>-<span class=\"template-class\">[ih-ohd]</span>",
+    "template": "Set A (ga)-:dehysd/:deyasd-[ih-ohd]",
+    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A (ga)</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">:dehysd</strong><strong class=\"template-root\">:deyasd</strong></span>-<span class=\"template-class\">[ih-ohd]</span>",
     "morphology": {
       "class_name": "ih-ohd",
-      "root": ":dehysd / :deyasd",
+      "root": ":dehysd/:deyasd",
       "h_grade_root": ":teyhst",
       "glottal_grade_root": ":teyahst",
       "post_root_morpheme": null,
@@ -1392,11 +1392,11 @@ export const dict = {
       "english": "*She's* *sewing* a dress with a sewing machine.",
       "audio": "https://cherokeenationdictionary.net/Audio/Sentence_for_entry_1016.m4a"
     },
-    "template": "Set A (ga)-:yew / :yewi-[sg-s-a[inf2]]",
-    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A (ga)</span>-<strong class=\"template-root\">:yew / :yewi</strong>-<span class=\"template-class\">[sg-s-a[inf2]]</span>",
+    "template": "Set A (ga)-:yew/:yewi-[sg-s-a[inf2]]",
+    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A (ga)</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">:yew</strong><strong class=\"template-root\">:yewi</strong></span>-<span class=\"template-class\">[sg-s-a[inf2]]</span>",
     "morphology": {
       "class_name": "sg-s-a[inf2]",
-      "root": ":yew / :yewi",
+      "root": ":yew/:yewi",
       "h_grade_root": ":yew",
       "glottal_grade_root": ":yewi",
       "post_root_morpheme": null,
@@ -1442,11 +1442,11 @@ export const dict = {
       "phonetics": "selu gadu *unigisdi* unilvkwdi anijalagi.",
       "english": "The Cherokees like *to eat* corn bread."
     },
-    "template": "Set A (ga)-:hy / :y-[e-aka]",
-    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A (ga)</span>-<strong class=\"template-root\">:hy / :y</strong>-<span class=\"template-class\">[e-aka]</span>",
+    "template": "Set A (ga)-:hy/:y-[e-aka]",
+    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A (ga)</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">:hy</strong><strong class=\"template-root\">:y</strong></span>-<span class=\"template-class\">[e-aka]</span>",
     "morphology": {
       "class_name": "e-aka",
-      "root": ":hy / :y",
+      "root": ":hy/:y",
       "h_grade_root": ":yh",
       "glottal_grade_root": ":y",
       "post_root_morpheme": null,
@@ -2199,11 +2199,11 @@ export const dict = {
       "english": "Someone *is peeking* through the window.",
       "audio": "https://cherokeenationdictionary.net/Audio/Sentence_for_entry_0288.m4a"
     },
-    "template": "Set A-akt / agat-[ih-ohd[perf2]]",
-    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<strong class=\"template-root\">akt / agat</strong>-<span class=\"template-class\">[ih-ohd[perf2]]</span>",
+    "template": "Set A-akt/agat-[ih-ohd[perf2]]",
+    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">akt</strong><strong class=\"template-root\">agat</strong></span>-<span class=\"template-class\">[ih-ohd[perf2]]</span>",
     "morphology": {
       "class_name": "ih-ohd[perf2]",
-      "root": "akt / agat",
+      "root": "akt/agat",
       "h_grade_root": "akhth",
       "glottal_grade_root": "akath",
       "post_root_morpheme": null,
@@ -2249,11 +2249,11 @@ export const dict = {
       "phonetics": "kilo uhyanisgv utvgana *uktahvsvi*. winuluhjvnagwu *uktahvsdi* udulvhvi.",
       "english": "When he heard someone calling him, *he turned around*. *He* wanted to *turn* *back* before he got there."
     },
-    "template": "Set A-aktah / agatah-[v-vhs]",
-    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<strong class=\"template-root\">aktah / agatah</strong>-<span class=\"template-class\">[v-vhs]</span>",
+    "template": "Set A-aktah/agatah-[v-vhs]",
+    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">aktah</strong><strong class=\"template-root\">agatah</strong></span>-<span class=\"template-class\">[v-vhs]</span>",
     "morphology": {
       "class_name": "v-vhs",
-      "root": "aktah / agatah",
+      "root": "aktah/agatah",
       "h_grade_root": "akhthah",
       "glottal_grade_root": "akathah",
       "post_root_morpheme": null,
@@ -2300,11 +2300,11 @@ export const dict = {
       "english": "The boy *is winking* at the girl.",
       "audio": "https://cherokeenationdictionary.net/Audio/Sentence_for_entry_0284.m4a"
     },
-    "template": "Set A-aktasd / agatasd-[ih-ohd]",
-    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<strong class=\"template-root\">aktasd / agatasd</strong>-<span class=\"template-class\">[ih-ohd]</span>",
+    "template": "Set A-aktasd/agatasd-[ih-ohd]",
+    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">aktasd</strong><strong class=\"template-root\">agatasd</strong></span>-<span class=\"template-class\">[ih-ohd]</span>",
     "morphology": {
       "class_name": "ih-ohd",
-      "root": "aktasd / agatasd",
+      "root": "aktasd/agatasd",
       "h_grade_root": "akhthahst",
       "glottal_grade_root": "akathahst",
       "post_root_morpheme": null,
@@ -2351,11 +2351,11 @@ export const dict = {
       "english": "When some people are in the sun, *they put on* dark *glasses*.",
       "audio": "https://cherokeenationdictionary.net/Audio/Sentence_for_entry_0586.m4a"
     },
-    "template": "de-Set A-aktinvd / agatinvd-[hvsg-han]",
-    "template_html": "<span class=\"template-prefix\">de</span>-<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<strong class=\"template-root\">aktinvd / agatinvd</strong>-<span class=\"template-class\">[hvsg-han]</span>",
+    "template": "de-Set A-aktinvd/agatinvd-[hvsg-han]",
+    "template_html": "<span class=\"template-prefix\">de</span>-<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">aktinvd</strong><strong class=\"template-root\">agatinvd</strong></span>-<span class=\"template-class\">[hvsg-han]</span>",
     "morphology": {
       "class_name": "hvsg-han",
-      "root": "aktinvd / agatinvd",
+      "root": "aktinvd/agatinvd",
       "h_grade_root": "akhthinvt",
       "glottal_grade_root": "akathinvt",
       "post_root_morpheme": null,
@@ -2503,11 +2503,11 @@ export const dict = {
       "phonetics": "sudalsgo adelv *gagwiyiha* dagwalela sinvda.",
       "english": "*I'm paying* sixty dollars a month for my car."
     },
-    "template": "Set A-aghwiy / agwiy-[ih-vh]",
-    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<strong class=\"template-root\">aghwiy / agwiy</strong>-<span class=\"template-class\">[ih-vh]</span>",
+    "template": "Set A-aghwiy/agwiy-[ih-vh]",
+    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">aghwiy</strong><strong class=\"template-root\">agwiy</strong></span>-<span class=\"template-class\">[ih-vh]</span>",
     "morphology": {
       "class_name": "ih-vh",
-      "root": "aghwiy / agwiy",
+      "root": "aghwiy/agwiy",
       "h_grade_root": "akwhiy",
       "glottal_grade_root": "akwiy",
       "post_root_morpheme": null,
@@ -2856,11 +2856,11 @@ export const dict = {
       "english": "He tried *to stand* a heavy piece of steel *in an upright position*.",
       "audio": "https://cherokeenationdictionary.net/Audio/Sentence_for_entry_0312.m4a"
     },
-    "template": "Set A-alehd / aled-[ih-ohd]",
-    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<strong class=\"template-root\">alehd / aled</strong>-<span class=\"template-class\">[ih-ohd]</span>",
+    "template": "Set A-alehd/aled-[ih-ohd]",
+    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">alehd</strong><strong class=\"template-root\">aled</strong></span>-<span class=\"template-class\">[ih-ohd]</span>",
     "morphology": {
       "class_name": "ih-ohd",
-      "root": "alehd / aled",
+      "root": "alehd/aled",
       "h_grade_root": "aleht",
       "glottal_grade_root": "alet",
       "post_root_morpheme": null,
@@ -2956,11 +2956,11 @@ export const dict = {
       "phonetics": "dihnesgesgi ahlilosdi kdisgo *ahlilosgv* iyv usgwalsdii hyahtena.",
       "english": "A carpenter uses a ruler in *measuring* the place where he cuts the board."
     },
-    "template": "Set A-ahl / adl-il-[o]",
-    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<strong class=\"template-root\">ahl / adl</strong>-<span class=\"template-post-root\">il</span>-<span class=\"template-class\">[o]</span>",
+    "template": "Set A-ahl/adl-il-[o]",
+    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">ahl</strong><strong class=\"template-root\">adl</strong></span>-<span class=\"template-post-root\">il</span>-<span class=\"template-class\">[o]</span>",
     "morphology": {
       "class_name": "o",
-      "root": "ahl / adl",
+      "root": "ahl/adl",
       "h_grade_root": "alh",
       "glottal_grade_root": "atl",
       "post_root_morpheme": "repetitive",
@@ -3006,11 +3006,11 @@ export const dict = {
       "phonetics": "gohusdi yusgasdanela jisgwa, *ahlawdisgoi*.",
       "english": "When something scares a bird, *it flies away*."
     },
-    "template": "Set A-ahlawid / adlawid-[ih-vh]",
-    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<strong class=\"template-root\">ahlawid / adlawid</strong>-<span class=\"template-class\">[ih-vh]</span>",
+    "template": "Set A-ahlawid/adlawid-[ih-vh]",
+    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">ahlawid</strong><strong class=\"template-root\">adlawid</strong></span>-<span class=\"template-class\">[ih-vh]</span>",
     "morphology": {
       "class_name": "ih-vh",
-      "root": "ahlawid / adlawid",
+      "root": "ahlawid/adlawid",
       "h_grade_root": "alhawit",
       "glottal_grade_root": "atlawit",
       "post_root_morpheme": null,
@@ -3057,11 +3057,11 @@ export const dict = {
       "english": "When he has eaten a lot, *he has a nightmare*.",
       "audio": "https://cherokeenationdictionary.net/Audio/Sentence_for_entry_0177.m4a"
     },
-    "template": "Set A-ahli / adli-[rev-gi]",
-    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<strong class=\"template-root\">ahli / adli</strong>-<span class=\"template-class\">[rev-gi]</span>",
+    "template": "Set A-ahli/adli-[rev-gi]",
+    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">ahli</strong><strong class=\"template-root\">adli</strong></span>-<span class=\"template-class\">[rev-gi]</span>",
     "morphology": {
       "class_name": "rev-gi",
-      "root": "ahli / adli",
+      "root": "ahli/adli",
       "h_grade_root": "alhi",
       "glottal_grade_root": "atli",
       "post_root_morpheme": null,
@@ -3108,11 +3108,11 @@ export const dict = {
       "english": "Some Cherokee girls like *to dance*.",
       "audio": "https://cherokeenationdictionary.net/Audio/Sentence_for_entry_0343.m4a"
     },
-    "template": "Set A-ahls / alis-[rev-gi]",
-    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<strong class=\"template-root\">ahls / alis</strong>-<span class=\"template-class\">[rev-gi]</span>",
+    "template": "Set A-ahls/alis-[rev-gi]",
+    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">ahls</strong><strong class=\"template-root\">alis</strong></span>-<span class=\"template-class\">[rev-gi]</span>",
     "morphology": {
       "class_name": "rev-gi",
-      "root": "ahls / alis",
+      "root": "ahls/alis",
       "h_grade_root": "alhs",
       "glottal_grade_root": "alihs",
       "post_root_morpheme": null,
@@ -3510,11 +3510,11 @@ export const dict = {
       "phonetics": "ije gasaleni ajinvnelv asehnv hla *yuhnawoei*.",
       "english": "She was given a new coat, but *she* didn't *wear it*."
     },
-    "template": "Set A-ahnaw / aniw-[o]",
-    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<strong class=\"template-root\">ahnaw / aniw</strong>-<span class=\"template-class\">[o]</span>",
+    "template": "Set A-ahnaw/aniw-[o]",
+    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">ahnaw</strong><strong class=\"template-root\">aniw</strong></span>-<span class=\"template-class\">[o]</span>",
     "morphology": {
       "class_name": "o",
-      "root": "ahnaw / aniw",
+      "root": "ahnaw/aniw",
       "h_grade_root": "anhaw",
       "glottal_grade_root": "aniw",
       "post_root_morpheme": null,
@@ -3561,11 +3561,11 @@ export const dict = {
       "english": "*Put on* some clean *clothes*.",
       "audio": "https://cherokeenationdictionary.net/Audio/Sentence_for_entry_0569.m4a"
     },
-    "template": "de-Set A-ahnaw / aniw-[o]",
-    "template_html": "<span class=\"template-prefix\">de</span>-<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<strong class=\"template-root\">ahnaw / aniw</strong>-<span class=\"template-class\">[o]</span>",
+    "template": "de-Set A-ahnaw/aniw-[o]",
+    "template_html": "<span class=\"template-prefix\">de</span>-<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">ahnaw</strong><strong class=\"template-root\">aniw</strong></span>-<span class=\"template-class\">[o]</span>",
     "morphology": {
       "class_name": "o",
-      "root": "ahnaw / aniw",
+      "root": "ahnaw/aniw",
       "h_grade_root": "anhaw",
       "glottal_grade_root": "aniw",
       "post_root_morpheme": null,
@@ -3612,11 +3612,11 @@ export const dict = {
       "english": "*I am undressing* to go to sleep.",
       "audio": "https://cherokeenationdictionary.net/Audio/Sentence_for_entry_0568.m4a"
     },
-    "template": "de-Set A-ahnaw / aniw-[rev-e]",
-    "template_html": "<span class=\"template-prefix\">de</span>-<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<strong class=\"template-root\">ahnaw / aniw</strong>-<span class=\"template-class\">[rev-e]</span>",
+    "template": "de-Set A-ahnaw/aniw-[rev-e]",
+    "template_html": "<span class=\"template-prefix\">de</span>-<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">ahnaw</strong><strong class=\"template-root\">aniw</strong></span>-<span class=\"template-class\">[rev-e]</span>",
     "morphology": {
       "class_name": "rev-e",
-      "root": "ahnaw / aniw",
+      "root": "ahnaw/aniw",
       "h_grade_root": "anhaw",
       "glottal_grade_root": "aniw",
       "post_root_morpheme": null,
@@ -3662,11 +3662,11 @@ export const dict = {
       "phonetics": "digadulida duhnuwv *duhnawaiyvsvi*.",
       "english": "*He changed* his wet *clothes*."
     },
-    "template": "de-Set A-ahnaw / aniw-a'iy-[v-vhs]",
-    "template_html": "<span class=\"template-prefix\">de</span>-<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<strong class=\"template-root\">ahnaw / aniw</strong>-<span class=\"template-post-root\">a'iy</span>-<span class=\"template-class\">[v-vhs]</span>",
+    "template": "de-Set A-ahnaw/aniw-a'iy-[v-vhs]",
+    "template_html": "<span class=\"template-prefix\">de</span>-<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">ahnaw</strong><strong class=\"template-root\">aniw</strong></span>-<span class=\"template-post-root\">a'iy</span>-<span class=\"template-class\">[v-vhs]</span>",
     "morphology": {
       "class_name": "v-vhs",
-      "root": "ahnaw / aniw",
+      "root": "ahnaw/aniw",
       "h_grade_root": "anhaw",
       "glottal_grade_root": "aniw",
       "post_root_morpheme": "change-out[flexible]",
@@ -3763,11 +3763,11 @@ export const dict = {
       "phonetics": "na dihnesgesgi utana jitaga uniyvsdi *uhnesgehvi*.",
       "english": "The carpenter *built* a big chicken house."
     },
-    "template": "Set A-ahnesg / anesg-[eh-eh]",
-    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<strong class=\"template-root\">ahnesg / anesg</strong>-<span class=\"template-class\">[eh-eh]</span>",
+    "template": "Set A-ahnesg/anesg-[eh-eh]",
+    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">ahnesg</strong><strong class=\"template-root\">anesg</strong></span>-<span class=\"template-class\">[eh-eh]</span>",
     "morphology": {
       "class_name": "eh-eh",
-      "root": "ahnesg / anesg",
+      "root": "ahnesg/anesg",
       "h_grade_root": "anhehsk",
       "glottal_grade_root": "anehsk",
       "post_root_morpheme": null,
@@ -3814,11 +3814,11 @@ export const dict = {
       "english": "Are *you* already *in bed*?",
       "audio": "https://cherokeenationdictionary.net/Audio/Sentence_for_entry_1620.m4a"
     },
-    "template": "Set B-ahni / ani-[stative-h]",
-    "template_html": "<span class=\"template-pronoun pronoun-set-b\">Set B</span>-<strong class=\"template-root\">ahni / ani</strong>-<span class=\"template-class\">[stative-h]</span>",
+    "template": "Set B-ahni/ani-[stative-h]",
+    "template_html": "<span class=\"template-pronoun pronoun-set-b\">Set B</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">ahni</strong><strong class=\"template-root\">ani</strong></span>-<span class=\"template-class\">[stative-h]</span>",
     "morphology": {
       "class_name": "stative-h",
-      "root": "ahni / ani",
+      "root": "ahni/ani",
       "h_grade_root": "anhi",
       "glottal_grade_root": "ani",
       "post_root_morpheme": null,
@@ -3863,11 +3863,11 @@ export const dict = {
       "phonetics": "dagwalela *uhnigisdohdi* uduli, asehnv hla disduisdi yiduwaya.",
       "english": "He wants *to start* the car but he doesn't have the keys."
     },
-    "template": "Set A-ahnigisd / anigisd-[ih-ohd]",
-    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<strong class=\"template-root\">ahnigisd / anigisd</strong>-<span class=\"template-class\">[ih-ohd]</span>",
+    "template": "Set A-ahnigisd/anigisd-[ih-ohd]",
+    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">ahnigisd</strong><strong class=\"template-root\">anigisd</strong></span>-<span class=\"template-class\">[ih-ohd]</span>",
     "morphology": {
       "class_name": "ih-ohd",
-      "root": "ahnigisd / anigisd",
+      "root": "ahnigisd/anigisd",
       "h_grade_root": "anhikihst",
       "glottal_grade_root": "anikihst",
       "post_root_morpheme": null,
@@ -3914,11 +3914,11 @@ export const dict = {
       "english": "What are *you thinking about*?",
       "audio": "https://cherokeenationdictionary.net/Audio/Sentence_for_entry_0043.m4a"
     },
-    "template": "Set A-at-ahnd / anvd-[eh-hehl]",
-    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<span class=\"template-middle-voice\">at</span>-<strong class=\"template-root\">ahnd / anvd</strong>-<span class=\"template-class\">[eh-hehl]</span>",
+    "template": "Set A-at-ahnd/anvd-[eh-hehl]",
+    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<span class=\"template-middle-voice\">at</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">ahnd</strong><strong class=\"template-root\">anvd</strong></span>-<span class=\"template-class\">[eh-hehl]</span>",
     "morphology": {
       "class_name": "eh-hehl",
-      "root": "ahnd / anvd",
+      "root": "ahnd/anvd",
       "h_grade_root": "anht",
       "glottal_grade_root": "anvt",
       "post_root_morpheme": null,
@@ -4315,11 +4315,11 @@ export const dict = {
       "english": "*He made an X* on the signature line because he didn't know how to write his name in English.",
       "audio": "https://cherokeenationdictionary.net/Audio/Sentence_for_entry_0549.m4a"
     },
-    "template": "de-Set A-adahnahwsd / adanahwsd-[ih-ohd]",
-    "template_html": "<span class=\"template-prefix\">de</span>-<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<strong class=\"template-root\">adahnahwsd / adanahwsd</strong>-<span class=\"template-class\">[ih-ohd]</span>",
+    "template": "de-Set A-adahnahwsd/adanahwsd-[ih-ohd]",
+    "template_html": "<span class=\"template-prefix\">de</span>-<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">adahnahwsd</strong><strong class=\"template-root\">adanahwsd</strong></span>-<span class=\"template-class\">[ih-ohd]</span>",
     "morphology": {
       "class_name": "ih-ohd",
-      "root": "adahnahwsd / adanahwsd",
+      "root": "adahnahwsd/adanahwsd",
       "h_grade_root": "atanhawhst",
       "glottal_grade_root": "atanawhst",
       "post_root_morpheme": null,
@@ -4467,11 +4467,11 @@ export const dict = {
       "phonetics": "chaneline dikanowadvsdi hlesdi *jadahyonelvi*\" adiha.\"",
       "english": "The eighth commandment says, Thou shalt *not commit adultery*.\"\""
     },
-    "template": "Set A-adahyon / adayon-[eh-el[imp4]]",
-    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<strong class=\"template-root\">adahyon / adayon</strong>-<span class=\"template-class\">[eh-el[imp4]]</span>",
+    "template": "Set A-adahyon/adayon-[eh-el[imp4]]",
+    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">adahyon</strong><strong class=\"template-root\">adayon</strong></span>-<span class=\"template-class\">[eh-el[imp4]]</span>",
     "morphology": {
       "class_name": "eh-el[imp4]",
-      "root": "adahyon / adayon",
+      "root": "adahyon/adayon",
       "h_grade_root": "atayhon",
       "glottal_grade_root": "atayon",
       "post_root_morpheme": null,
@@ -4518,11 +4518,11 @@ export const dict = {
       "english": "When the girl winked at him, *he got embarrassed*.",
       "audio": "https://cherokeenationdictionary.net/Audio/Sentence_for_entry_0066.m4a"
     },
-    "template": "Set A-adeho / ade'o-[sg-s-hi-hihst]",
-    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<strong class=\"template-root\">adeho / ade'o</strong>-<span class=\"template-class\">[sg-s-hi-hihst]</span>",
+    "template": "Set A-adeho/ade'o-[sg-s-hi-hihst]",
+    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">adeho</strong><strong class=\"template-root\">ade'o</strong></span>-<span class=\"template-class\">[sg-s-hi-hihst]</span>",
     "morphology": {
       "class_name": "sg-s-hi-hihst",
-      "root": "adeho / ade'o",
+      "root": "adeho/ade'o",
       "h_grade_root": "ateho",
       "glottal_grade_root": "ate'o",
       "post_root_morpheme": null,
@@ -4619,11 +4619,11 @@ export const dict = {
       "english": "*He found out* that he was being cheated.",
       "audio": "https://cherokeenationdictionary.net/Audio/Sentence_for_entry_0071.m4a"
     },
-    "template": "Set A-adeloho / adelo'o-[sg-s-hi-hihst]",
-    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<strong class=\"template-root\">adeloho / adelo'o</strong>-<span class=\"template-class\">[sg-s-hi-hihst]</span>",
+    "template": "Set A-adeloho/adelo'o-[sg-s-hi-hihst]",
+    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">adeloho</strong><strong class=\"template-root\">adelo'o</strong></span>-<span class=\"template-class\">[sg-s-hi-hihst]</span>",
     "morphology": {
       "class_name": "sg-s-hi-hihst",
-      "root": "adeloho / adelo'o",
+      "root": "adeloho/adelo'o",
       "h_grade_root": "ateloho",
       "glottal_grade_root": "atelo'o",
       "post_root_morpheme": null,
@@ -4721,11 +4721,11 @@ export const dict = {
       "english": "Why do *you* like *to argue*?",
       "audio": "https://cherokeenationdictionary.net/Audio/Sentence_for_entry_0487.m4a"
     },
-    "template": "Set A-atiyo / a'diyo-[hih-lh]",
-    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<strong class=\"template-root\">atiyo / a'diyo</strong>-<span class=\"template-class\">[hih-lh]</span>",
+    "template": "Set A-atiyo/a'diyo-[hih-lh]",
+    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">atiyo</strong><strong class=\"template-root\">a'diyo</strong></span>-<span class=\"template-class\">[hih-lh]</span>",
     "morphology": {
       "class_name": "hih-lh",
-      "root": "atiyo / a'diyo",
+      "root": "atiyo/a'diyo",
       "h_grade_root": "athiyo",
       "glottal_grade_root": "a'tiyo",
       "post_root_morpheme": null,
@@ -4772,11 +4772,11 @@ export const dict = {
       "english": "*He* doesn't like *to take a drink*.",
       "audio": "https://cherokeenationdictionary.net/Audio/Sentence_for_entry_0498.m4a"
     },
-    "template": "Set A-atu / a'du-[rev-gi]",
-    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<strong class=\"template-root\">atu / a'du</strong>-<span class=\"template-class\">[rev-gi]</span>",
+    "template": "Set A-atu/a'du-[rev-gi]",
+    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">atu</strong><strong class=\"template-root\">a'du</strong></span>-<span class=\"template-class\">[rev-gi]</span>",
     "morphology": {
       "class_name": "rev-gi",
-      "root": "atu / a'du",
+      "root": "atu/a'du",
       "h_grade_root": "athu",
       "glottal_grade_root": "a'tu",
       "post_root_morpheme": null,
@@ -5578,11 +5578,11 @@ export const dict = {
       "phonetics": "selu gadu *utsdevi*.",
       "english": "*He took a bite* of cornbread."
     },
-    "template": "Set A-ajd / ajisd-[rev-e]",
-    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<strong class=\"template-root\">ajd / ajisd</strong>-<span class=\"template-class\">[rev-e]</span>",
+    "template": "Set A-ajd/ajisd-[rev-e]",
+    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">ajd</strong><strong class=\"template-root\">ajisd</strong></span>-<span class=\"template-class\">[rev-e]</span>",
     "morphology": {
       "class_name": "rev-e",
-      "root": "ajd / ajisd",
+      "root": "ajd/ajisd",
       "h_grade_root": "atst",
       "glottal_grade_root": "atsihst",
       "post_root_morpheme": null,
@@ -5730,11 +5730,11 @@ export const dict = {
       "english": "The boy *is breathing* hard because he ran a long distance.",
       "audio": "https://cherokeenationdictionary.net/Audio/Sentence_for_entry_1309.m4a"
     },
-    "template": "Set A (ga)-ahwolad / a'wolad-[rev-e]",
-    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A (ga)</span>-<strong class=\"template-root\">ahwolad / a'wolad</strong>-<span class=\"template-class\">[rev-e]</span>",
+    "template": "Set A (ga)-ahwolad/a'wolad-[rev-e]",
+    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A (ga)</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">ahwolad</strong><strong class=\"template-root\">a'wolad</strong></span>-<span class=\"template-class\">[rev-e]</span>",
     "morphology": {
       "class_name": "rev-e",
-      "root": "ahwolad / a'wolad",
+      "root": "ahwolad/a'wolad",
       "h_grade_root": "awholat",
       "glottal_grade_root": "a'wolat",
       "post_root_morpheme": null,
@@ -5780,11 +5780,11 @@ export const dict = {
       "phonetics": "gohusdi ejatvdvhnv, *hawohiliyvsvi*.",
       "english": "When you're asked a question, *answer*."
     },
-    "template": "Set A (ga)-awohil / awo'il-iy-[v-vhs]",
-    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A (ga)</span>-<strong class=\"template-root\">awohil / awo'il</strong>-<span class=\"template-post-root\">iy</span>-<span class=\"template-class\">[v-vhs]</span>",
+    "template": "Set A (ga)-awohil/awo'il-iy-[v-vhs]",
+    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A (ga)</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">awohil</strong><strong class=\"template-root\">awo'il</strong></span>-<span class=\"template-post-root\">iy</span>-<span class=\"template-class\">[v-vhs]</span>",
     "morphology": {
       "class_name": "v-vhs",
-      "root": "awohil / awo'il",
+      "root": "awohil/awo'il",
       "h_grade_root": "awohil",
       "glottal_grade_root": "awo'il",
       "post_root_morpheme": "change-out",
@@ -5830,11 +5830,11 @@ export const dict = {
       "phonetics": "hila iyudanvhida eligwu *hyahuinuga*?",
       "english": "How far can you *swim*?"
     },
-    "template": "Set A-ahyu' / ayu'-in-[eg-vs]",
-    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<strong class=\"template-root\">ahyu' / ayu'</strong>-<span class=\"template-post-root\">in</span>-<span class=\"template-class\">[eg-vs]</span>",
+    "template": "Set A-ahyu'/ayu'-in-[eg-vs]",
+    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">ahyu'</strong><strong class=\"template-root\">ayu'</strong></span>-<span class=\"template-post-root\">in</span>-<span class=\"template-class\">[eg-vs]</span>",
     "morphology": {
       "class_name": "eg-vs",
-      "root": "ahyu' / ayu'",
+      "root": "ahyu'/ayu'",
       "h_grade_root": "ayhu'",
       "glottal_grade_root": "ayu'",
       "post_root_morpheme": "in",
@@ -6078,11 +6078,11 @@ export const dict = {
       "english": "*Leave* the chair. There isn't room to put it in the car.",
       "audio": "https://cherokeenationdictionary.net/Audio/Sentence_for_entry_0084.m4a"
     },
-    "template": "Set A-h / '-iy-[a]",
-    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<strong class=\"template-root\">h / '</strong>-<span class=\"template-post-root\">iy</span>-<span class=\"template-class\">[a]</span>",
+    "template": "Set A-h/'-iy-[a]",
+    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">h</strong><strong class=\"template-root\">'</strong></span>-<span class=\"template-post-root\">iy</span>-<span class=\"template-class\">[a]</span>",
     "morphology": {
       "class_name": "a",
-      "root": "h / '",
+      "root": "h/'",
       "h_grade_root": "h",
       "glottal_grade_root": "'",
       "post_root_morpheme": "leaving",
@@ -6128,11 +6128,11 @@ export const dict = {
       "phonetics": "sgohi judetiyvda uneladvi daligwa, kila udulvhv *udanvsdii*.",
       "english": "He lived in Tahlequah for ten years, the *he* wanted *to move*."
     },
-    "template": "Set A-h / '-[v-vhs]",
-    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<strong class=\"template-root\">h / '</strong>-<span class=\"template-class\">[v-vhs]</span>",
+    "template": "Set A-h/'-[v-vhs]",
+    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">h</strong><strong class=\"template-root\">'</strong></span>-<span class=\"template-class\">[v-vhs]</span>",
     "morphology": {
       "class_name": "v-vhs",
-      "root": "h / '",
+      "root": "h/'",
       "h_grade_root": "h",
       "glottal_grade_root": "'",
       "post_root_morpheme": null,
@@ -6280,11 +6280,11 @@ export const dict = {
       "phonetics": "sgwahlesdi uwahnila jolani, *uhlkodvhnvi*.",
       "english": "When the ball hit the window, *it shattered*."
     },
-    "template": "Set A-al/ali-hkotd / kotd-[ih-ohd]",
-    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<span class=\"template-middle-voice\">al/ali</span>-<strong class=\"template-root\">hkotd / kotd</strong>-<span class=\"template-class\">[ih-ohd]</span>",
+    "template": "Set A-al/ali-hkotd/kotd-[ih-ohd]",
+    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<span class=\"template-middle-voice\">al/ali</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">hkotd</strong><strong class=\"template-root\">kotd</strong></span>-<span class=\"template-class\">[ih-ohd]</span>",
     "morphology": {
       "class_name": "ih-ohd",
-      "root": "hkotd / kotd",
+      "root": "hkotd/kotd",
       "h_grade_root": "hkhotht",
       "glottal_grade_root": "khotht",
       "post_root_morpheme": null,
@@ -7746,11 +7746,11 @@ export const dict = {
       "phonetics": "hila iyagalvladi eligwu *yidehahltaduga*?",
       "english": "How high can *you jump*?"
     },
-    "template": "de-Set A-al/ali-htad / tad-[eg-invs]",
-    "template_html": "<span class=\"template-prefix\">de</span>-<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<span class=\"template-middle-voice\">al/ali</span>-<strong class=\"template-root\">htad / tad</strong>-<span class=\"template-class\">[eg-invs]</span>",
+    "template": "de-Set A-al/ali-htad/tad-[eg-invs]",
+    "template_html": "<span class=\"template-prefix\">de</span>-<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<span class=\"template-middle-voice\">al/ali</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">htad</strong><strong class=\"template-root\">tad</strong></span>-<span class=\"template-class\">[eg-invs]</span>",
     "morphology": {
       "class_name": "eg-invs",
-      "root": "htad / tad",
+      "root": "htad/tad",
       "h_grade_root": "hthat",
       "glottal_grade_root": "that",
       "post_root_morpheme": null,
@@ -7797,11 +7797,11 @@ export const dict = {
       "english": "*He preached* for one hour.",
       "audio": "https://cherokeenationdictionary.net/Audio/Sentence_for_entry_0183.m4a"
     },
-    "template": "Set A-al/ali-hjado / jado-[hvsg-hn[inf2]]",
-    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<span class=\"template-middle-voice\">al/ali</span>-<strong class=\"template-root\">hjado / jado</strong>-<span class=\"template-class\">[hvsg-hn[inf2]]</span>",
+    "template": "Set A-al/ali-hjado/jado-[hvsg-hn[inf2]]",
+    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<span class=\"template-middle-voice\">al/ali</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">hjado</strong><strong class=\"template-root\">jado</strong></span>-<span class=\"template-class\">[hvsg-hn[inf2]]</span>",
     "morphology": {
       "class_name": "hvsg-hn[inf2]",
-      "root": "hjado / jado",
+      "root": "hjado/jado",
       "h_grade_root": "htsato",
       "glottal_grade_root": "tsato",
       "post_root_morpheme": null,
@@ -7848,11 +7848,11 @@ export const dict = {
       "english": "*She's putting* some corn *in* the boiling water.",
       "audio": "https://cherokeenationdictionary.net/Audio/Sentence_for_entry_0206.m4a"
     },
-    "template": "Set A-hu / 'u-d-[i-a-i]",
-    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<strong class=\"template-root\">hu / 'u</strong>-<span class=\"template-post-root\">d</span>-<span class=\"template-class\">[i-a-i]</span>",
+    "template": "Set A-hu/'u-d-[i-a-i]",
+    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">hu</strong><strong class=\"template-root\">'u</strong></span>-<span class=\"template-post-root\">d</span>-<span class=\"template-class\">[i-a-i]</span>",
     "morphology": {
       "class_name": "i-a-i",
-      "root": "hu / 'u",
+      "root": "hu/'u",
       "h_grade_root": "hu",
       "glottal_grade_root": "'u",
       "post_root_morpheme": "long[no-a]",
@@ -7899,11 +7899,11 @@ export const dict = {
       "english": "*He put* green *wood into the stove*.",
       "audio": "https://cherokeenationdictionary.net/Audio/Sentence_for_entry_0571.m4a"
     },
-    "template": "de-Set A-hvd / 'vd-[hvsg-han]",
-    "template_html": "<span class=\"template-prefix\">de</span>-<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<strong class=\"template-root\">hvd / 'vd</strong>-<span class=\"template-class\">[hvsg-han]</span>",
+    "template": "de-Set A-hvd/'vd-[hvsg-han]",
+    "template_html": "<span class=\"template-prefix\">de</span>-<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">hvd</strong><strong class=\"template-root\">'vd</strong></span>-<span class=\"template-class\">[hvsg-han]</span>",
     "morphology": {
       "class_name": "hvsg-han",
-      "root": "hvd / 'vd",
+      "root": "hvd/'vd",
       "h_grade_root": "hvt",
       "glottal_grade_root": "'vt",
       "post_root_morpheme": null,
@@ -8049,11 +8049,11 @@ export const dict = {
       "phonetics": "julasihdeni *daganawhdiha*.",
       "english": "*He's warming* his feet."
     },
-    "template": "Set A-ganahwd / ganawod-[ih-ohd]",
-    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<strong class=\"template-root\">ganahwd / ganawod</strong>-<span class=\"template-class\">[ih-ohd]</span>",
+    "template": "Set A-ganahwd/ganawod-[ih-ohd]",
+    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">ganahwd</strong><strong class=\"template-root\">ganawod</strong></span>-<span class=\"template-class\">[ih-ohd]</span>",
     "morphology": {
       "class_name": "ih-ohd",
-      "root": "ganahwd / ganawod",
+      "root": "ganahwd/ganawod",
       "h_grade_root": "kanawht",
       "glottal_grade_root": "kanawot",
       "post_root_morpheme": null,
@@ -8150,11 +8150,11 @@ export const dict = {
       "english": "*He is tying* my shoe laces for *me*.",
       "audio": "https://cherokeenationdictionary.net/Audio/Sentence_for_entry_0575.m4a"
     },
-    "template": "de-Set A-kane / gane-[hih-lh]",
-    "template_html": "<span class=\"template-prefix\">de</span>-<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<strong class=\"template-root\">kane / gane</strong>-<span class=\"template-class\">[hih-lh]</span>",
+    "template": "de-Set A-kane/gane-[hih-lh]",
+    "template_html": "<span class=\"template-prefix\">de</span>-<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">kane</strong><strong class=\"template-root\">gane</strong></span>-<span class=\"template-class\">[hih-lh]</span>",
     "morphology": {
       "class_name": "hih-lh",
-      "root": "kane / gane",
+      "root": "kane/gane",
       "h_grade_root": "khane",
       "glottal_grade_root": "kane",
       "post_root_morpheme": null,
@@ -8201,11 +8201,11 @@ export const dict = {
       "english": "*He untied* his shoes when he took them off.",
       "audio": "https://cherokeenationdictionary.net/Audio/Sentence_for_entry_0576.m4a"
     },
-    "template": "de-Set A-kanehy / ganehy-[ih-vh[inf2]]",
-    "template_html": "<span class=\"template-prefix\">de</span>-<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<strong class=\"template-root\">kanehy / ganehy</strong>-<span class=\"template-class\">[ih-vh[inf2]]</span>",
+    "template": "de-Set A-kanehy/ganehy-[ih-vh[inf2]]",
+    "template_html": "<span class=\"template-prefix\">de</span>-<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">kanehy</strong><strong class=\"template-root\">ganehy</strong></span>-<span class=\"template-class\">[ih-vh[inf2]]</span>",
     "morphology": {
       "class_name": "ih-vh[inf2]",
-      "root": "kanehy / ganehy",
+      "root": "kanehy/ganehy",
       "h_grade_root": "khaneyh",
       "glottal_grade_root": "kaneyh",
       "post_root_morpheme": null,
@@ -8251,11 +8251,11 @@ export const dict = {
       "phonetics": "gohida ulsihgv yvyaa *yidvkewagi*.",
       "english": "If you're in the dark for a long time, *you'll become blind*."
     },
-    "template": "de-Set A-kewa / 'gewa-[g-ts[inf2]]",
-    "template_html": "<span class=\"template-prefix\">de</span>-<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<strong class=\"template-root\">kewa / 'gewa</strong>-<span class=\"template-class\">[g-ts[inf2]]</span>",
+    "template": "de-Set A-kewa/'gewa-[g-ts[inf2]]",
+    "template_html": "<span class=\"template-prefix\">de</span>-<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">kewa</strong><strong class=\"template-root\">'gewa</strong></span>-<span class=\"template-class\">[g-ts[inf2]]</span>",
     "morphology": {
       "class_name": "g-ts[inf2]",
-      "root": "kewa / 'gewa",
+      "root": "kewa/'gewa",
       "h_grade_root": "khewa",
       "glottal_grade_root": "'kewa",
       "post_root_morpheme": null,
@@ -8302,11 +8302,11 @@ export const dict = {
       "english": "*I am* barely *swallowing* because my throat hurts.",
       "audio": "https://cherokeenationdictionary.net/Audio/Sentence_for_entry_0270.m4a"
     },
-    "template": "Set A-ki / 'gi-[sg-s-hi-hihst]",
-    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<strong class=\"template-root\">ki / 'gi</strong>-<span class=\"template-class\">[sg-s-hi-hihst]</span>",
+    "template": "Set A-ki/'gi-[sg-s-hi-hihst]",
+    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">ki</strong><strong class=\"template-root\">'gi</strong></span>-<span class=\"template-class\">[sg-s-hi-hihst]</span>",
     "morphology": {
       "class_name": "sg-s-hi-hihst",
-      "root": "ki / 'gi",
+      "root": "ki/'gi",
       "h_grade_root": "khi",
       "glottal_grade_root": "'ki",
       "post_root_morpheme": null,
@@ -8404,11 +8404,11 @@ export const dict = {
       "english": "The electrical wires *smoked* when they became hot.",
       "audio": "https://cherokeenationdictionary.net/Audio/Sentence_for_entry_0581.m4a"
     },
-    "template": "de-Set A-ksvsd / gasvsd-[ih-ohd]",
-    "template_html": "<span class=\"template-prefix\">de</span>-<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<strong class=\"template-root\">ksvsd / gasvsd</strong>-<span class=\"template-class\">[ih-ohd]</span>",
+    "template": "de-Set A-ksvsd/gasvsd-[ih-ohd]",
+    "template_html": "<span class=\"template-prefix\">de</span>-<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">ksvsd</strong><strong class=\"template-root\">gasvsd</strong></span>-<span class=\"template-class\">[ih-ohd]</span>",
     "morphology": {
       "class_name": "ih-ohd",
-      "root": "ksvsd / gasvsd",
+      "root": "ksvsd/gasvsd",
       "h_grade_root": "khsvhst",
       "glottal_grade_root": "kahsvhst",
       "post_root_morpheme": null,
@@ -8455,11 +8455,11 @@ export const dict = {
       "english": "*I'm heading* for town.",
       "audio": "https://cherokeenationdictionary.net/Audio/Sentence_for_entry_1834.m4a"
     },
-    "template": "wi-Set A-kt / gat-[stative]",
-    "template_html": "<span class=\"template-prefix\">wi</span>-<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<strong class=\"template-root\">kt / gat</strong>-<span class=\"template-class\">[stative]</span>",
+    "template": "wi-Set A-kt/gat-[stative]",
+    "template_html": "<span class=\"template-prefix\">wi</span>-<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">kt</strong><strong class=\"template-root\">gat</strong></span>-<span class=\"template-class\">[stative]</span>",
     "morphology": {
       "class_name": "stative",
-      "root": "kt / gat",
+      "root": "kt/gat",
       "h_grade_root": "khth",
       "glottal_grade_root": "kath",
       "post_root_morpheme": null,
@@ -8505,11 +8505,11 @@ export const dict = {
       "english": "*Do you know how* to speak Cherokee?",
       "audio": "https://cherokeenationdictionary.net/Audio/Sentence_for_entry_0280.m4a"
     },
-    "template": "Set A-kta / gata-[stative-h]",
-    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<strong class=\"template-root\">kta / gata</strong>-<span class=\"template-class\">[stative-h]</span>",
+    "template": "Set A-kta/gata-[stative-h]",
+    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">kta</strong><strong class=\"template-root\">gata</strong></span>-<span class=\"template-class\">[stative-h]</span>",
     "morphology": {
       "class_name": "stative-h",
-      "root": "kta / gata",
+      "root": "kta/gata",
       "h_grade_root": "khtha",
       "glottal_grade_root": "katha",
       "post_root_morpheme": null,
@@ -8553,11 +8553,11 @@ export const dict = {
       "english": "I don't want anything. *I'm* just *looking around*.",
       "audio": "https://cherokeenationdictionary.net/Audio/Sentence_for_entry_0287.m4a"
     },
-    "template": "Set A-kten / gaten-[oh-ol[inf3]]",
-    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<strong class=\"template-root\">kten / gaten</strong>-<span class=\"template-class\">[oh-ol[inf3]]</span>",
+    "template": "Set A-kten/gaten-[oh-ol[inf3]]",
+    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">kten</strong><strong class=\"template-root\">gaten</strong></span>-<span class=\"template-class\">[oh-ol[inf3]]</span>",
     "morphology": {
       "class_name": "oh-ol[inf3]",
-      "root": "kten / gaten",
+      "root": "kten/gaten",
       "h_grade_root": "khthen",
       "glottal_grade_root": "kathen",
       "post_root_morpheme": null,
@@ -8604,11 +8604,11 @@ export const dict = {
       "english": "*He* barely *went through* the small opening.",
       "audio": "https://cherokeenationdictionary.net/Audio/Sentence_for_entry_0297.m4a"
     },
-    "template": "Set A-ktvle / gatvle-[sg-s-hi-hihst]",
-    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<strong class=\"template-root\">ktvle / gatvle</strong>-<span class=\"template-class\">[sg-s-hi-hihst]</span>",
+    "template": "Set A-ktvle/gatvle-[sg-s-hi-hihst]",
+    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">ktvle</strong><strong class=\"template-root\">gatvle</strong></span>-<span class=\"template-class\">[sg-s-hi-hihst]</span>",
     "morphology": {
       "class_name": "sg-s-hi-hihst",
-      "root": "ktvle / gatvle",
+      "root": "ktvle/gatvle",
       "h_grade_root": "khthvle",
       "glottal_grade_root": "kathvle",
       "post_root_morpheme": null,
@@ -8654,11 +8654,11 @@ export const dict = {
       "phonetics": "suhliloda iga selu *duktlvhv* sogwili ugisdi",
       "english": "*He shelled* a bushel of *corn* for the horse to eat."
     },
-    "template": "de-Set A-kdhl / gadhl-[ih-vh[inf2]]",
-    "template_html": "<span class=\"template-prefix\">de</span>-<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<strong class=\"template-root\">kdhl / gadhl</strong>-<span class=\"template-class\">[ih-vh[inf2]]</span>",
+    "template": "de-Set A-kdhl/gadhl-[ih-vh[inf2]]",
+    "template_html": "<span class=\"template-prefix\">de</span>-<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">kdhl</strong><strong class=\"template-root\">gadhl</strong></span>-<span class=\"template-class\">[ih-vh[inf2]]</span>",
     "morphology": {
       "class_name": "ih-vh[inf2]",
-      "root": "kdhl / gadhl",
+      "root": "kdhl/gadhl",
       "h_grade_root": "khtlh",
       "glottal_grade_root": "katlh",
       "post_root_morpheme": null,
@@ -8705,11 +8705,11 @@ export const dict = {
       "english": "*She's dipping* water from a bucket.",
       "audio": "https://cherokeenationdictionary.net/Audio/Sentence_for_entry_0298.m4a"
     },
-    "template": "Set A-ku / 'gu-[rev-gi]",
-    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<strong class=\"template-root\">ku / 'gu</strong>-<span class=\"template-class\">[rev-gi]</span>",
+    "template": "Set A-ku/'gu-[rev-gi]",
+    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">ku</strong><strong class=\"template-root\">'gu</strong></span>-<span class=\"template-class\">[rev-gi]</span>",
     "morphology": {
       "class_name": "rev-gi",
-      "root": "ku / 'gu",
+      "root": "ku/'gu",
       "h_grade_root": "khu",
       "glottal_grade_root": "'ku",
       "post_root_morpheme": null,
@@ -8807,11 +8807,11 @@ export const dict = {
       "english": "*He was in pain* for two days.",
       "audio": "https://cherokeenationdictionary.net/Audio/Sentence_for_entry_0135.m4a"
     },
-    "template": "Set A-gihliyo / giliyo-[g-ts]",
-    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<strong class=\"template-root\">gihliyo / giliyo</strong>-<span class=\"template-class\">[g-ts]</span>",
+    "template": "Set A-gihliyo/giliyo-[g-ts]",
+    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">gihliyo</strong><strong class=\"template-root\">giliyo</strong></span>-<span class=\"template-class\">[g-ts]</span>",
     "morphology": {
       "class_name": "g-ts",
-      "root": "gihliyo / giliyo",
+      "root": "gihliyo/giliyo",
       "h_grade_root": "kilhiyo",
       "glottal_grade_root": "kiliyo",
       "post_root_morpheme": null,
@@ -8960,11 +8960,11 @@ export const dict = {
       "english": "*Chop* up some cabbage to cook.",
       "audio": "https://cherokeenationdictionary.net/Audio/Sentence_for_entry_0154.m4a"
     },
-    "template": "Set A-gvhaluy / gv'aluy-[sg-h]",
-    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<strong class=\"template-root\">gvhaluy / gv'aluy</strong>-<span class=\"template-class\">[sg-h]</span>",
+    "template": "Set A-gvhaluy/gv'aluy-[sg-h]",
+    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">gvhaluy</strong><strong class=\"template-root\">gv'aluy</strong></span>-<span class=\"template-class\">[sg-h]</span>",
     "morphology": {
       "class_name": "sg-h",
-      "root": "gvhaluy / gv'aluy",
+      "root": "gvhaluy/gv'aluy",
       "h_grade_root": "kvhaluy",
       "glottal_grade_root": "kv'aluy",
       "post_root_morpheme": null,
@@ -9011,11 +9011,11 @@ export const dict = {
       "english": "Whatever *price you set*, I'll pay you.",
       "audio": "https://cherokeenationdictionary.net/Audio/Sentence_for_entry_0560.m4a"
     },
-    "template": "de-Set A-gvwahld / gvwalod-[ih-ohd]",
-    "template_html": "<span class=\"template-prefix\">de</span>-<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<strong class=\"template-root\">gvwahld / gvwalod</strong>-<span class=\"template-class\">[ih-ohd]</span>",
+    "template": "de-Set A-gvwahld/gvwalod-[ih-ohd]",
+    "template_html": "<span class=\"template-prefix\">de</span>-<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">gvwahld</strong><strong class=\"template-root\">gvwalod</strong></span>-<span class=\"template-class\">[ih-ohd]</span>",
     "morphology": {
       "class_name": "ih-ohd",
-      "root": "gvwahld / gvwalod",
+      "root": "gvwahld/gvwalod",
       "h_grade_root": "kvwalht",
       "glottal_grade_root": "kvwalot",
       "post_root_morpheme": null,
@@ -9717,11 +9717,11 @@ export const dict = {
       "english": "What is the man *putting in* the can?",
       "audio": "https://cherokeenationdictionary.net/Audio/Sentence_for_entry_0828.m4a"
     },
-    "template": "Set A (ga)-hld / lod-[ih-ohd]",
-    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A (ga)</span>-<strong class=\"template-root\">hld / lod</strong>-<span class=\"template-class\">[ih-ohd]</span>",
+    "template": "Set A (ga)-hld/lod-[ih-ohd]",
+    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A (ga)</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">hld</strong><strong class=\"template-root\">lod</strong></span>-<span class=\"template-class\">[ih-ohd]</span>",
     "morphology": {
       "class_name": "ih-ohd",
-      "root": "hld / lod",
+      "root": "hld/lod",
       "h_grade_root": "lht",
       "glottal_grade_root": "lot",
       "post_root_morpheme": null,
@@ -9819,11 +9819,11 @@ export const dict = {
       "english": "When did *he die*?",
       "audio": "https://cherokeenationdictionary.net/Audio/Sentence_for_entry_0528.m4a"
     },
-    "template": "Set A (ga)-lihwo / liwo-[g-ts]",
-    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A (ga)</span>-<strong class=\"template-root\">lihwo / liwo</strong>-<span class=\"template-class\">[g-ts]</span>",
+    "template": "Set A (ga)-lihwo/liwo-[g-ts]",
+    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A (ga)</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">lihwo</strong><strong class=\"template-root\">liwo</strong></span>-<span class=\"template-class\">[g-ts]</span>",
     "morphology": {
       "class_name": "g-ts",
-      "root": "lihwo / liwo",
+      "root": "lihwo/liwo",
       "h_grade_root": "liwho",
       "glottal_grade_root": "liwo",
       "post_root_morpheme": null,
@@ -9970,11 +9970,11 @@ export const dict = {
       "english": "My neighbor *stopped by* on his way to the store",
       "audio": "https://cherokeenationdictionary.net/Audio/Sentence_for_entry_0878.m4a"
     },
-    "template": "Set A (ga)-lohisd / lo'isd-[ih-ohd]",
-    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A (ga)</span>-<strong class=\"template-root\">lohisd / lo'isd</strong>-<span class=\"template-class\">[ih-ohd]</span>",
+    "template": "Set A (ga)-lohisd/lo'isd-[ih-ohd]",
+    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A (ga)</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">lohisd</strong><strong class=\"template-root\">lo'isd</strong></span>-<span class=\"template-class\">[ih-ohd]</span>",
     "morphology": {
       "class_name": "ih-ohd",
-      "root": "lohisd / lo'isd",
+      "root": "lohisd/lo'isd",
       "h_grade_root": "lohihst",
       "glottal_grade_root": "lo'ihst",
       "post_root_morpheme": null,
@@ -10672,11 +10672,11 @@ export const dict = {
       "phonetics": "hila iga unvdi *janehiyei*?",
       "english": "How much milk *did you leave*?"
     },
-    "template": "Set A (ga)-neh / ne'-iy-[a]",
-    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A (ga)</span>-<strong class=\"template-root\">neh / ne'</strong>-<span class=\"template-post-root\">iy</span>-<span class=\"template-class\">[a]</span>",
+    "template": "Set A (ga)-neh/ne'-iy-[a]",
+    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A (ga)</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">neh</strong><strong class=\"template-root\">ne'</strong></span>-<span class=\"template-post-root\">iy</span>-<span class=\"template-class\">[a]</span>",
     "morphology": {
       "class_name": "a",
-      "root": "neh / ne'",
+      "root": "neh/ne'",
       "h_grade_root": "neh",
       "glottal_grade_root": "ne'",
       "post_root_morpheme": "leaving",
@@ -10772,11 +10772,11 @@ export const dict = {
       "english": "The dog is trying *to find* some water.",
       "audio": "https://cherokeenationdictionary.net/Audio/Sentence_for_entry_0920.m4a"
     },
-    "template": "Set A (ga)-nehwaht / newaht-[ih-vh[inf2]]",
-    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A (ga)</span>-<strong class=\"template-root\">nehwaht / newaht</strong>-<span class=\"template-class\">[ih-vh[inf2]]</span>",
+    "template": "Set A (ga)-nehwaht/newaht-[ih-vh[inf2]]",
+    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A (ga)</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">nehwaht</strong><strong class=\"template-root\">newaht</strong></span>-<span class=\"template-class\">[ih-vh[inf2]]</span>",
     "morphology": {
       "class_name": "ih-vh[inf2]",
-      "root": "nehwaht / newaht",
+      "root": "nehwaht/newaht",
       "h_grade_root": "newhahth",
       "glottal_grade_root": "newahth",
       "post_root_morpheme": null,
@@ -10823,11 +10823,11 @@ export const dict = {
       "english": "Where *are you taking* the ball?",
       "audio": "https://cherokeenationdictionary.net/Audio/Sentence_for_entry_0222.m4a"
     },
-    "template": "Set A (ga)-hn / 'n-[eg-vs]",
-    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A (ga)</span>-<strong class=\"template-root\">hn / 'n</strong>-<span class=\"template-class\">[eg-vs]</span>",
+    "template": "Set A (ga)-hn/'n-[eg-vs]",
+    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A (ga)</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">hn</strong><strong class=\"template-root\">'n</strong></span>-<span class=\"template-class\">[eg-vs]</span>",
     "morphology": {
       "class_name": "eg-vs",
-      "root": "hn / 'n",
+      "root": "hn/'n",
       "h_grade_root": "nh",
       "glottal_grade_root": "'n",
       "post_root_morpheme": null,
@@ -10874,11 +10874,11 @@ export const dict = {
       "english": "I'll just *lie* on the floor.",
       "audio": "https://cherokeenationdictionary.net/Audio/Sentence_for_entry_0929.m4a"
     },
-    "template": "Set A (ga)-hn / nv-[stative-k]",
-    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A (ga)</span>-<strong class=\"template-root\">hn / nv</strong>-<span class=\"template-class\">[stative-k]</span>",
+    "template": "Set A (ga)-hn/nv-[stative-k]",
+    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A (ga)</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">hn</strong><strong class=\"template-root\">nv</strong></span>-<span class=\"template-class\">[stative-k]</span>",
     "morphology": {
       "class_name": "stative-k",
-      "root": "hn / nv",
+      "root": "hn/nv",
       "h_grade_root": "nh",
       "glottal_grade_root": "nv",
       "post_root_morpheme": null,
@@ -10923,11 +10923,11 @@ export const dict = {
       "english": "He barely *ascended* the mountain.",
       "audio": "https://cherokeenationdictionary.net/Audio/Sentence_for_entry_1272.m4a"
     },
-    "template": "Set A (ga)-hnalu / nalu-[sg-s-hi-hihst]",
-    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A (ga)</span>-<strong class=\"template-root\">hnalu / nalu</strong>-<span class=\"template-class\">[sg-s-hi-hihst]</span>",
+    "template": "Set A (ga)-hnalu/nalu-[sg-s-hi-hihst]",
+    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A (ga)</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">hnalu</strong><strong class=\"template-root\">nalu</strong></span>-<span class=\"template-class\">[sg-s-hi-hihst]</span>",
     "morphology": {
       "class_name": "sg-s-hi-hihst",
-      "root": "hnalu / nalu",
+      "root": "hnalu/nalu",
       "h_grade_root": "nhalu",
       "glottal_grade_root": "nalu",
       "post_root_morpheme": null,
@@ -11125,11 +11125,11 @@ export const dict = {
       "phonetics": "*jinawogo* yuhyvdla doyi.",
       "english": "*I get cold* when it's cold outside."
     },
-    "template": "Set A (ga)-hnawo / nawo-[g-ts]",
-    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A (ga)</span>-<strong class=\"template-root\">hnawo / nawo</strong>-<span class=\"template-class\">[g-ts]</span>",
+    "template": "Set A (ga)-hnawo/nawo-[g-ts]",
+    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A (ga)</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">hnawo</strong><strong class=\"template-root\">nawo</strong></span>-<span class=\"template-class\">[g-ts]</span>",
     "morphology": {
       "class_name": "g-ts",
-      "root": "hnawo / nawo",
+      "root": "hnawo/nawo",
       "h_grade_root": "nhawo",
       "glottal_grade_root": "nawo",
       "post_root_morpheme": null,
@@ -11175,11 +11175,11 @@ export const dict = {
       "phonetics": "tsgwisdi *gawoniha*, asehnv hla gohusdi yadiha.",
       "english": "*He's* *talking* a lot, but he's not saying anything."
     },
-    "template": "Set A (ga)-hne / ne-[g-ts]",
-    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A (ga)</span>-<strong class=\"template-root\">hne / ne</strong>-<span class=\"template-class\">[g-ts]</span>",
+    "template": "Set A (ga)-hne/ne-[g-ts]",
+    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A (ga)</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">hne</strong><strong class=\"template-root\">ne</strong></span>-<span class=\"template-class\">[g-ts]</span>",
     "morphology": {
       "class_name": "g-ts",
-      "root": "hne / ne",
+      "root": "hne/ne",
       "h_grade_root": "nhe",
       "glottal_grade_root": "ne",
       "post_root_morpheme": null,
@@ -11226,11 +11226,11 @@ export const dict = {
       "english": "He looked for his conjuring material when *he* was asked *to conjure*.",
       "audio": "https://cherokeenationdictionary.net/Audio/Sentence_for_entry_0551.m4a"
     },
-    "template": "de-Set A-ata-hnes / nes-[e-aka]",
-    "template_html": "<span class=\"template-prefix\">de</span>-<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<span class=\"template-middle-voice\">ata</span>-<strong class=\"template-root\">hnes / nes</strong>-<span class=\"template-class\">[e-aka]</span>",
+    "template": "de-Set A-ata-hnes/nes-[e-aka]",
+    "template_html": "<span class=\"template-prefix\">de</span>-<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<span class=\"template-middle-voice\">ata</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">hnes</strong><strong class=\"template-root\">nes</strong></span>-<span class=\"template-class\">[e-aka]</span>",
     "morphology": {
       "class_name": "e-aka",
-      "root": "hnes / nes",
+      "root": "hnes/nes",
       "h_grade_root": "nhehs",
       "glottal_grade_root": "nehs",
       "post_root_morpheme": null,
@@ -11277,11 +11277,11 @@ export const dict = {
       "english": "*Who put foreign matter* in the well?",
       "audio": "https://cherokeenationdictionary.net/Audio/Sentence_for_entry_1287.m4a"
     },
-    "template": "Set A (ga)-hnesal / nesal-[hvsg-han]",
-    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A (ga)</span>-<strong class=\"template-root\">hnesal / nesal</strong>-<span class=\"template-class\">[hvsg-han]</span>",
+    "template": "Set A (ga)-hnesal/nesal-[hvsg-han]",
+    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A (ga)</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">hnesal</strong><strong class=\"template-root\">nesal</strong></span>-<span class=\"template-class\">[hvsg-han]</span>",
     "morphology": {
       "class_name": "hvsg-han",
-      "root": "hnesal / nesal",
+      "root": "hnesal/nesal",
       "h_grade_root": "nhehsal",
       "glottal_grade_root": "nehsal",
       "post_root_morpheme": null,
@@ -11327,11 +11327,11 @@ export const dict = {
       "phonetics": "getilosdi gvhdi *uhnegwadvhv* uhnihlgvi.",
       "english": "*He pried* the stump with a crowbar."
     },
-    "template": "Set A (ga)-hnegwad / negwad-[ih-vh]",
-    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A (ga)</span>-<strong class=\"template-root\">hnegwad / negwad</strong>-<span class=\"template-class\">[ih-vh]</span>",
+    "template": "Set A (ga)-hnegwad/negwad-[ih-vh]",
+    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A (ga)</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">hnegwad</strong><strong class=\"template-root\">negwad</strong></span>-<span class=\"template-class\">[ih-vh]</span>",
     "morphology": {
       "class_name": "ih-vh",
-      "root": "hnegwad / negwad",
+      "root": "hnegwad/negwad",
       "h_grade_root": "nhekwat",
       "glottal_grade_root": "nekwat",
       "post_root_morpheme": null,
@@ -11428,11 +11428,11 @@ export const dict = {
       "english": "*I was conversing* on the phone.",
       "audio": "https://cherokeenationdictionary.net/Audio/Sentence_for_entry_0564.m4a"
     },
-    "template": "de-Set A-ali-hno / no-[eh-hehl]",
-    "template_html": "<span class=\"template-prefix\">de</span>-<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<span class=\"template-middle-voice\">ali</span>-<strong class=\"template-root\">hno / no</strong>-<span class=\"template-class\">[eh-hehl]</span>",
+    "template": "de-Set A-ali-hno/no-[eh-hehl]",
+    "template_html": "<span class=\"template-prefix\">de</span>-<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<span class=\"template-middle-voice\">ali</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">hno</strong><strong class=\"template-root\">no</strong></span>-<span class=\"template-class\">[eh-hehl]</span>",
     "morphology": {
       "class_name": "eh-hehl",
-      "root": "hno / no",
+      "root": "hno/no",
       "h_grade_root": "nho",
       "glottal_grade_root": "no",
       "post_root_morpheme": null,
@@ -11479,11 +11479,11 @@ export const dict = {
       "english": "Don't *tell* what happened.",
       "audio": "https://cherokeenationdictionary.net/Audio/Sentence_for_entry_1297.m4a"
     },
-    "template": "Set A (ga)-hno / no-[eh-hehl]",
-    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A (ga)</span>-<strong class=\"template-root\">hno / no</strong>-<span class=\"template-class\">[eh-hehl]</span>",
+    "template": "Set A (ga)-hno/no-[eh-hehl]",
+    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A (ga)</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">hno</strong><strong class=\"template-root\">no</strong></span>-<span class=\"template-class\">[eh-hehl]</span>",
     "morphology": {
       "class_name": "eh-hehl",
-      "root": "hno / no",
+      "root": "hno/no",
       "h_grade_root": "nho",
       "glottal_grade_root": "no",
       "post_root_morpheme": null,
@@ -11530,11 +11530,11 @@ export const dict = {
       "english": "A big snake *is crawling*.",
       "audio": "https://cherokeenationdictionary.net/Audio/Sentence_for_entry_0047.m4a"
     },
-    "template": "Set A-ata-hnsin / nasin-[eg-vs[pres2]]",
-    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<span class=\"template-middle-voice\">ata</span>-<strong class=\"template-root\">hnsin / nasin</strong>-<span class=\"template-class\">[eg-vs[pres2]]</span>",
+    "template": "Set A-ata-hnsin/nasin-[eg-vs[pres2]]",
+    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<span class=\"template-middle-voice\">ata</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">hnsin</strong><strong class=\"template-root\">nasin</strong></span>-<span class=\"template-class\">[eg-vs[pres2]]</span>",
     "morphology": {
       "class_name": "eg-vs[pres2]",
-      "root": "hnsin / nasin",
+      "root": "hnsin/nasin",
       "h_grade_root": "nhsin",
       "glottal_grade_root": "nahsin",
       "post_root_morpheme": null,
@@ -11580,11 +11580,11 @@ export const dict = {
       "phonetics": "hisgi iyuhliloda unvdi *jinvjeha*.",
       "english": "*I have* five gallons of milk"
     },
-    "template": "Set A (ga)-hnj / nvj-[stative-eh]",
-    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A (ga)</span>-<strong class=\"template-root\">hnj / nvj</strong>-<span class=\"template-class\">[stative-eh]</span>",
+    "template": "Set A (ga)-hnj/nvj-[stative-eh]",
+    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A (ga)</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">hnj</strong><strong class=\"template-root\">nvj</strong></span>-<span class=\"template-class\">[stative-eh]</span>",
     "morphology": {
       "class_name": "stative-eh",
-      "root": "hnj / nvj",
+      "root": "hnj/nvj",
       "h_grade_root": "nhts",
       "glottal_grade_root": "nvts",
       "post_root_morpheme": null,
@@ -11629,11 +11629,11 @@ export const dict = {
       "english": "*She strains* sassafras tea with a cloth.",
       "audio": "https://cherokeenationdictionary.net/Audio/Sentence_for_entry_1305.m4a"
     },
-    "template": "Set A (ga)-hnvsolvsd / nvsolvsd-[ih-ohd]",
-    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A (ga)</span>-<strong class=\"template-root\">hnvsolvsd / nvsolvsd</strong>-<span class=\"template-class\">[ih-ohd]</span>",
+    "template": "Set A (ga)-hnvsolvsd/nvsolvsd-[ih-ohd]",
+    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A (ga)</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">hnvsolvsd</strong><strong class=\"template-root\">nvsolvsd</strong></span>-<span class=\"template-class\">[ih-ohd]</span>",
     "morphology": {
       "class_name": "ih-ohd",
-      "root": "hnvsolvsd / nvsolvsd",
+      "root": "hnvsolvsd/nvsolvsd",
       "h_grade_root": "nhvhsolvhst",
       "glottal_grade_root": "nvhsolvhst",
       "post_root_morpheme": null,
@@ -12083,11 +12083,11 @@ export const dict = {
       "english": "*Knock* the bug *off* the potato.",
       "audio": "https://cherokeenationdictionary.net/Audio/Sentence_for_entry_0884.m4a"
     },
-    "template": "Set A (ga)-ohohnd / o'ohnd-[ih-ohd]",
-    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A (ga)</span>-<strong class=\"template-root\">ohohnd / o'ohnd</strong>-<span class=\"template-class\">[ih-ohd]</span>",
+    "template": "Set A (ga)-ohohnd/o'ohnd-[ih-ohd]",
+    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A (ga)</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">ohohnd</strong><strong class=\"template-root\">o'ohnd</strong></span>-<span class=\"template-class\">[ih-ohd]</span>",
     "morphology": {
       "class_name": "ih-ohd",
-      "root": "ohohnd / o'ohnd",
+      "root": "ohohnd/o'ohnd",
       "h_grade_root": "ohonht",
       "glottal_grade_root": "o'onht",
       "post_root_morpheme": null,
@@ -12236,11 +12236,11 @@ export const dict = {
       "english": "*They sat* quietly.",
       "audio": "https://cherokeenationdictionary.net/Audio/Sentence_for_entry_0374.m4a"
     },
-    "template": "Set B-ol / oli-[stative-h]",
-    "template_html": "<span class=\"template-pronoun pronoun-set-b\">Set B</span>-<strong class=\"template-root\">ol / oli</strong>-<span class=\"template-class\">[stative-h]</span>",
+    "template": "Set B-ol/oli-[stative-h]",
+    "template_html": "<span class=\"template-pronoun pronoun-set-b\">Set B</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">ol</strong><strong class=\"template-root\">oli</strong></span>-<span class=\"template-class\">[stative-h]</span>",
     "morphology": {
       "class_name": "stative-h",
-      "root": "ol / oli",
+      "root": "ol/oli",
       "h_grade_root": "ol",
       "glottal_grade_root": "oli",
       "post_root_morpheme": null,
@@ -12336,11 +12336,11 @@ export const dict = {
       "phonetics": "gayohligwu yulsdayvhna, *gohlvsgoi*",
       "english": "If he eats just a little, *he gets full*."
     },
-    "template": "Set A (ga)-ohlv / olv-[sg-s-hi-hihst]",
-    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A (ga)</span>-<strong class=\"template-root\">ohlv / olv</strong>-<span class=\"template-class\">[sg-s-hi-hihst]</span>",
+    "template": "Set A (ga)-ohlv/olv-[sg-s-hi-hihst]",
+    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A (ga)</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">ohlv</strong><strong class=\"template-root\">olv</strong></span>-<span class=\"template-class\">[sg-s-hi-hihst]</span>",
     "morphology": {
       "class_name": "sg-s-hi-hihst",
-      "root": "ohlv / olv",
+      "root": "ohlv/olv",
       "h_grade_root": "olhv",
       "glottal_grade_root": "olv",
       "post_root_morpheme": null,
@@ -12488,11 +12488,11 @@ export const dict = {
       "english": "Whose letter are you *writing*?",
       "audio": "https://cherokeenationdictionary.net/Audio/Sentence_for_entry_1057.m4a"
     },
-    "template": "Set A (ga)-ohwel / owel-[i-vka]",
-    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A (ga)</span>-<strong class=\"template-root\">ohwel / owel</strong>-<span class=\"template-class\">[i-vka]</span>",
+    "template": "Set A (ga)-ohwel/owel-[i-vka]",
+    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A (ga)</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">ohwel</strong><strong class=\"template-root\">owel</strong></span>-<span class=\"template-class\">[i-vka]</span>",
     "morphology": {
       "class_name": "i-vka",
-      "root": "ohwel / owel",
+      "root": "ohwel/owel",
       "h_grade_root": "owhel",
       "glottal_grade_root": "owel",
       "post_root_morpheme": null,
@@ -13187,11 +13187,11 @@ export const dict = {
       "phonetics": "yiduhyahketsohna nana amohi *deguhilosgoi*.",
       "english": "When she finishes peeling potatoes, *she washes them in* water."
     },
-    "template": "Set A (ga)-uh / u'-il-[o]",
-    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A (ga)</span>-<strong class=\"template-root\">uh / u'</strong>-<span class=\"template-post-root\">il</span>-<span class=\"template-class\">[o]</span>",
+    "template": "Set A (ga)-uh/u'-il-[o]",
+    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A (ga)</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">uh</strong><strong class=\"template-root\">u'</strong></span>-<span class=\"template-post-root\">il</span>-<span class=\"template-class\">[o]</span>",
     "morphology": {
       "class_name": "o",
-      "root": "uh / u'",
+      "root": "uh/u'",
       "h_grade_root": "uh",
       "glottal_grade_root": "u'",
       "post_root_morpheme": "repetitive",
@@ -13237,11 +13237,11 @@ export const dict = {
       "phonetics": "gago *uwuhahlanei* hia galogodi.",
       "english": "Who *put a handle on* this hoe?"
     },
-    "template": "Set A (ga)-uhal / u'al-[hvsg-han]",
-    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A (ga)</span>-<strong class=\"template-root\">uhal / u'al</strong>-<span class=\"template-class\">[hvsg-han]</span>",
+    "template": "Set A (ga)-uhal/u'al-[hvsg-han]",
+    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A (ga)</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">uhal</strong><strong class=\"template-root\">u'al</strong></span>-<span class=\"template-class\">[hvsg-han]</span>",
     "morphology": {
       "class_name": "hvsg-han",
-      "root": "uhal / u'al",
+      "root": "uhal/u'al",
       "h_grade_root": "uhal",
       "glottal_grade_root": "u'al",
       "post_root_morpheme": null,
@@ -13734,11 +13734,11 @@ export const dict = {
       "phonetics": "agalisgv *uwanowhtana* unhji, hlawotuhi nulstanvi.",
       "english": "*When* the sunshine *melted* the snow, it became muddy."
     },
-    "template": "Set A (ga)-vnahwd / vnawod-[ih-ohd]",
-    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A (ga)</span>-<strong class=\"template-root\">vnahwd / vnawod</strong>-<span class=\"template-class\">[ih-ohd]</span>",
+    "template": "Set A (ga)-vnahwd/vnawod-[ih-ohd]",
+    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A (ga)</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">vnahwd</strong><strong class=\"template-root\">vnawod</strong></span>-<span class=\"template-class\">[ih-ohd]</span>",
     "morphology": {
       "class_name": "ih-ohd",
-      "root": "vnahwd / vnawod",
+      "root": "vnahwd/vnawod",
       "h_grade_root": "vnawht",
       "glottal_grade_root": "vnawot",
       "post_root_morpheme": null,
@@ -13836,11 +13836,11 @@ export const dict = {
       "english": "What *do you have* cooking?",
       "audio": "https://cherokeenationdictionary.net/Audio/Sentence_for_entry_1102.m4a"
     },
-    "template": "Set A (ga)-vhnisd / vnisd-[ih-ohd]",
-    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A (ga)</span>-<strong class=\"template-root\">vhnisd / vnisd</strong>-<span class=\"template-class\">[ih-ohd]</span>",
+    "template": "Set A (ga)-vhnisd/vnisd-[ih-ohd]",
+    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A (ga)</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">vhnisd</strong><strong class=\"template-root\">vnisd</strong></span>-<span class=\"template-class\">[ih-ohd]</span>",
     "morphology": {
       "class_name": "ih-ohd",
-      "root": "vhnisd / vnisd",
+      "root": "vhnisd/vnisd",
       "h_grade_root": "vnhihst",
       "glottal_grade_root": "vnihst",
       "post_root_morpheme": null,
@@ -14441,11 +14441,11 @@ export const dict = {
       "english": "This isn't my home. *I'm just visiting*.",
       "audio": "https://cherokeenationdictionary.net/Audio/Sentence_for_entry_0022.m4a"
     },
-    "template": "Set A-ata-hwahtvh / wahtvh-id-[oh-ol-a]",
-    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<span class=\"template-middle-voice\">ata</span>-<strong class=\"template-root\">hwahtvh / wahtvh</strong>-<span class=\"template-post-root\">id</span>-<span class=\"template-class\">[oh-ol-a]</span>",
+    "template": "Set A-ata-hwahtvh/wahtvh-id-[oh-ol-a]",
+    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<span class=\"template-middle-voice\">ata</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">hwahtvh</strong><strong class=\"template-root\">wahtvh</strong></span>-<span class=\"template-post-root\">id</span>-<span class=\"template-class\">[oh-ol-a]</span>",
     "morphology": {
       "class_name": "oh-ol-a",
-      "root": "hwahtvh / wahtvh",
+      "root": "hwahtvh/wahtvh",
       "h_grade_root": "whahthvh",
       "glottal_grade_root": "wahthvh",
       "post_root_morpheme": "be-at",
@@ -14492,11 +14492,11 @@ export const dict = {
       "english": "*She planted* flowers near the building.",
       "audio": "https://cherokeenationdictionary.net/Audio/Sentence_for_entry_0216.m4a"
     },
-    "template": "Set A-hwi / wi-[sg-s-hst]",
-    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<strong class=\"template-root\">hwi / wi</strong>-<span class=\"template-class\">[sg-s-hst]</span>",
+    "template": "Set A-hwi/wi-[sg-s-hst]",
+    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">hwi</strong><strong class=\"template-root\">wi</strong></span>-<span class=\"template-class\">[sg-s-hst]</span>",
     "morphology": {
       "class_name": "sg-s-hst",
-      "root": "hwi / wi",
+      "root": "hwi/wi",
       "h_grade_root": "whi",
       "glottal_grade_root": "wi",
       "post_root_morpheme": null,
@@ -14841,11 +14841,11 @@ export const dict = {
       "english": "Where *are you taking* the ball?",
       "audio": "https://cherokeenationdictionary.net/Audio/Sentence_for_entry_0222.m4a"
     },
-    "template": "Set A-hy / y-[eg-vs]",
-    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<strong class=\"template-root\">hy / y</strong>-<span class=\"template-class\">[eg-vs]</span>",
+    "template": "Set A-hy/y-[eg-vs]",
+    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">hy</strong><strong class=\"template-root\">y</strong></span>-<span class=\"template-class\">[eg-vs]</span>",
     "morphology": {
       "class_name": "eg-vs",
-      "root": "hy / y",
+      "root": "hy/y",
       "h_grade_root": "yh",
       "glottal_grade_root": "y",
       "post_root_morpheme": null,
@@ -14891,11 +14891,11 @@ export const dict = {
       "phonetics": "usgwada gohweli degohwelisgv, *udahyastanvi*.",
       "english": "When he finished writing letters, *he stretched*."
     },
-    "template": "Set A-ata-hyasd / yasd-[ih-ohd]",
-    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<span class=\"template-middle-voice\">ata</span>-<strong class=\"template-root\">hyasd / yasd</strong>-<span class=\"template-class\">[ih-ohd]</span>",
+    "template": "Set A-ata-hyasd/yasd-[ih-ohd]",
+    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<span class=\"template-middle-voice\">ata</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">hyasd</strong><strong class=\"template-root\">yasd</strong></span>-<span class=\"template-class\">[ih-ohd]</span>",
     "morphology": {
       "class_name": "ih-ohd",
-      "root": "hyasd / yasd",
+      "root": "hyasd/yasd",
       "h_grade_root": "yhahst",
       "glottal_grade_root": "yahst",
       "post_root_morpheme": null,
@@ -14942,11 +14942,11 @@ export const dict = {
       "english": "*She quilted it* with white cotton.",
       "audio": "https://cherokeenationdictionary.net/Audio/Sentence_for_entry_0224.m4a"
     },
-    "template": "Set A-hyehgal / yehgal-[hvsg-han]",
-    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<strong class=\"template-root\">hyehgal / yehgal</strong>-<span class=\"template-class\">[hvsg-han]</span>",
+    "template": "Set A-hyehgal/yehgal-[hvsg-han]",
+    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">hyehgal</strong><strong class=\"template-root\">yehgal</strong></span>-<span class=\"template-class\">[hvsg-han]</span>",
     "morphology": {
       "class_name": "hvsg-han",
-      "root": "hyehgal / yehgal",
+      "root": "hyehgal/yehgal",
       "h_grade_root": "yhehkal",
       "glottal_grade_root": "yehkal",
       "post_root_morpheme": null,
@@ -14993,11 +14993,11 @@ export const dict = {
       "english": "The surgeon *is operating on* the patient.",
       "audio": "https://cherokeenationdictionary.net/Audio/Sentence_for_entry_0225.m4a"
     },
-    "template": "Set A-hyel / yel-[oh-al[imp2]]",
-    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<strong class=\"template-root\">hyel / yel</strong>-<span class=\"template-class\">[oh-al[imp2]]</span>",
+    "template": "Set A-hyel/yel-[oh-al[imp2]]",
+    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">hyel</strong><strong class=\"template-root\">yel</strong></span>-<span class=\"template-class\">[oh-al[imp2]]</span>",
     "morphology": {
       "class_name": "oh-al[imp2]",
-      "root": "hyel / yel",
+      "root": "hyel/yel",
       "h_grade_root": "yhel",
       "glottal_grade_root": "yel",
       "post_root_morpheme": null,
@@ -15043,11 +15043,11 @@ export const dict = {
       "phonetics": "dagwalela gvhdi uwahnila talugisgi getv, *uhliyvhgwidvnvi*.",
       "english": "When he hit the steel post with a car, *it bent*."
     },
-    "template": "Set A-hyvhgwid / yvhgwid-[vsk[imp2]]",
-    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<strong class=\"template-root\">hyvhgwid / yvhgwid</strong>-<span class=\"template-class\">[vsk[imp2]]</span>",
+    "template": "Set A-hyvhgwid/yvhgwid-[vsk[imp2]]",
+    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">hyvhgwid</strong><strong class=\"template-root\">yvhgwid</strong></span>-<span class=\"template-class\">[vsk[imp2]]</span>",
     "morphology": {
       "class_name": "vsk[imp2]",
-      "root": "hyvhgwid / yvhgwid",
+      "root": "hyvhgwid/yvhgwid",
       "h_grade_root": "yhvhkwit",
       "glottal_grade_root": "yvhkwit",
       "post_root_morpheme": null,
@@ -15093,11 +15093,11 @@ export const dict = {
       "phonetics": "gohusdi yasgasdaneh ahwi, *ahliyvsanawsdisgoi*.",
       "english": "When a deer is trying to scare something, *it snorts*."
     },
-    "template": "Set A-ali-hyvsanahwsd / yvsanahwsd-[ih-ohd]",
-    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<span class=\"template-middle-voice\">ali</span>-<strong class=\"template-root\">hyvsanahwsd / yvsanahwsd</strong>-<span class=\"template-class\">[ih-ohd]</span>",
+    "template": "Set A-ali-hyvsanahwsd/yvsanahwsd-[ih-ohd]",
+    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<span class=\"template-middle-voice\">ali</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">hyvsanahwsd</strong><strong class=\"template-root\">yvsanahwsd</strong></span>-<span class=\"template-class\">[ih-ohd]</span>",
     "morphology": {
       "class_name": "ih-ohd",
-      "root": "hyvsanahwsd / yvsanahwsd",
+      "root": "hyvsanahwsd/yvsanahwsd",
       "h_grade_root": "yhvhsanawhst",
       "glottal_grade_root": "yvhsanawhst",
       "post_root_morpheme": null,
@@ -15496,11 +15496,11 @@ export const dict = {
       "english": "When did *he die*?",
       "audio": "https://cherokeenationdictionary.net/Audio/Sentence_for_entry_0528.m4a"
     },
-    "template": "Set A-yohu / yo'u-[sg-s-hi-hihst]",
-    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<strong class=\"template-root\">yohu / yo'u</strong>-<span class=\"template-class\">[sg-s-hi-hihst]</span>",
+    "template": "Set A-yohu/yo'u-[sg-s-hi-hihst]",
+    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">yohu</strong><strong class=\"template-root\">yo'u</strong></span>-<span class=\"template-class\">[sg-s-hi-hihst]</span>",
     "morphology": {
       "class_name": "sg-s-hi-hihst",
-      "root": "yohu / yo'u",
+      "root": "yohu/yo'u",
       "h_grade_root": "yohu",
       "glottal_grade_root": "yo'u",
       "post_root_morpheme": null,
@@ -15648,11 +15648,11 @@ export const dict = {
       "phonetics": "gohusdi yagvsgalanela, ahida *ahwahtisgoi*.",
       "english": "When something is hidden from him, *he finds it* easily"
     },
-    "template": "Set A-yvhwaht / yvwaht-[ih-vh[inf2]]",
-    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<strong class=\"template-root\">yvhwaht / yvwaht</strong>-<span class=\"template-class\">[ih-vh[inf2]]</span>",
+    "template": "Set A-yvhwaht/yvwaht-[ih-vh[inf2]]",
+    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">yvhwaht</strong><strong class=\"template-root\">yvwaht</strong></span>-<span class=\"template-class\">[ih-vh[inf2]]</span>",
     "morphology": {
       "class_name": "ih-vh[inf2]",
-      "root": "yvhwaht / yvwaht",
+      "root": "yvhwaht/yvwaht",
       "h_grade_root": "yvwhahth",
       "glottal_grade_root": "yvwahth",
       "post_root_morpheme": null,
@@ -15698,11 +15698,11 @@ export const dict = {
       "phonetics": "juwenvsv *uhwidvhv* sgwahlesdi.",
       "english": "*He took* the ball home with him."
     },
-    "template": "Set A-yvhwid / yvwid-[ih-vh]",
-    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<strong class=\"template-root\">yvhwid / yvwid</strong>-<span class=\"template-class\">[ih-vh]</span>",
+    "template": "Set A-yvhwid/yvwid-[ih-vh]",
+    "template_html": "<span class=\"template-pronoun pronoun-set-a\">Set A</span>-<span class=\"template-root-stacked\"><strong class=\"template-root\">yvhwid</strong><strong class=\"template-root\">yvwid</strong></span>-<span class=\"template-class\">[ih-vh]</span>",
     "morphology": {
       "class_name": "ih-vh",
-      "root": "yvhwid / yvwid",
+      "root": "yvhwid/yvwid",
       "h_grade_root": "yvwhit",
       "glottal_grade_root": "yvwit",
       "post_root_morpheme": null,

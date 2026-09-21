@@ -182,6 +182,17 @@ function setExampleSentence(word) {
   sentenceEnglish.innerHTML = "";
 }
 
+function playCurrentSentenceAudio() {
+  const audioElm = audioWrapper.querySelector("audio");
+  if (audioElm) {
+    audioElm.currentTime = 0;
+    audioElm.play().catch(() => {});
+  } else if (currentWord?.sentence?.audio) {
+    const audio = new Audio(currentWord.sentence.audio);
+    audio.play().catch(() => {});
+  }
+}
+
 function renderChoiceOptions(options, form) {
   const renderedOptions = options.map((option, idx) => {
     let clicked = false;
@@ -229,6 +240,7 @@ function renderChoiceOptions(options, form) {
         button.classList.add("btn-correct");
         button.title = "Click again to go to the next word";
         sentenceEnglish.innerHTML = boldAsterisk(currentWord.sentence.english);
+        playCurrentSentenceAudio();
       } else {
         button.classList.add("btn-incorrect");
       }
@@ -359,6 +371,7 @@ function handleCheck() {
     feedbackMessage.textContent = "✓ Correct!";
     checkBtn.textContent = "Next →";
     revealWriteInDetails();
+    playCurrentSentenceAudio();
   } else {
     answerInput.classList.remove("input-correct");
     answerInput.classList.add("input-incorrect");
